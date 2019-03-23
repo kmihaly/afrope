@@ -18,7 +18,6 @@ $color-white-opaque: rgba(228, 225, 225, .6);
 .schedule-button {
   display: inline-block;
   
-    
   a {
     color: $color-white;
     text-align: center;
@@ -75,9 +74,6 @@ $color-white-opaque: rgba(228, 225, 225, .6);
         color: black;
       }
     }
-
-    
-
   }
 }
 
@@ -94,7 +90,7 @@ $color-white-opaque: rgba(228, 225, 225, .6);
 .cover {
   position: absolute;
   top: 2.75rem;
-  height: 100%;
+  height: calc(100vh - 2.75rem);
   width: 100%;
   background-image: url(./images/cover/cover.jpg);
   background-size: cover;
@@ -105,10 +101,6 @@ $color-white-opaque: rgba(228, 225, 225, .6);
   top: 2.75rem;
   height: 100vh;
   position: relative;
-  //background-color: $color-dark-opaque;
-  //opacity: 0.6;
-
-  //filter: brightness(50%) opacity(.8);
   color: white;
 
   .heading {
@@ -117,9 +109,8 @@ $color-white-opaque: rgba(228, 225, 225, .6);
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    //background-color: $color-white-opaque;
-    //filter: brightness(130%) !important;
     z-index: 5;
+    margin-bottom: 2rem;
   
     &__primary {
       font-size: 2.5rem;
@@ -142,17 +133,13 @@ $color-white-opaque: rgba(228, 225, 225, .6);
   
       &__logo {
         width: 20%;
-        filter: invert(100%);
-        
-        //  .logo-frame, .logo-continent {
-        //   background-color: white;
-        //   color: white;
-        // } 
-        }    
+        filter: invert(100%); 
+      }    
     }
 
     &__secondary {
       font-size: 2rem;
+      margin-bottom: 2rem;
     }
   }
 
@@ -162,6 +149,7 @@ $color-white-opaque: rgba(228, 225, 225, .6);
     height: 50px;
     background-image: url(images/down-arrow.svg);
     background-size: cover;
+    filter: invert(100%);
     bottom: 50px;
     left: calc(50% - 25px);
     cursor: pointer;
@@ -170,11 +158,12 @@ $color-white-opaque: rgba(228, 225, 225, .6);
 
 .transition {
   position: relative;
+  padding: 4rem;
 
   &-box {
     width: 65%;
     position: relative;
-    margin: 4rem auto;
+    margin: 2rem auto;
 
     &__text {
       font-size: 1.4rem;
@@ -255,6 +244,7 @@ $color-white-opaque: rgba(228, 225, 225, .6);
     &__image {
       background-image: url(./images/cards/students.jpg);
       background-size: cover;
+      background-position: center; 
       position: absolute;
       width: 100%;
       height: 300px;
