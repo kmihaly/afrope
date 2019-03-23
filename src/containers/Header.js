@@ -3,7 +3,9 @@ import ScheduleButton from '../components/ScheduleButton';
 
 class Header extends Component {
     render() {
-        return (
+        return (<>
+            <div className="cover">
+            </div>
             <div className="header">
                 <div className="heading">
                     <h1 className="heading__primary">AfRope Consultancy</h1>
@@ -19,6 +21,7 @@ class Header extends Component {
                 <div className="jump-to-content-button">
                 </div>
             </div>
+            </>
         );
     }
 }

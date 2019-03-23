@@ -1,3 +1,27 @@
+@keyframes moveInBottom {
+  0% {
+    transform: translateY(300px); }
+  100% {
+    transform: translateY(0); } }
+
+.schedule-button {
+  display: inline-block; }
+  .schedule-button a {
+    color: #e4e1e1;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1;
+    text-decoration: none;
+    padding: .875rem;
+    border: #ddd solid 0.25rem;
+    background-color: #333; }
+    .schedule-button a:active {
+      background-color: #4CAF50;
+      color: white; }
+    .schedule-button a:hover {
+      background-color: #ddd;
+      color: black; }
+
 /* Style the navbar */
 .navbar {
   position: fixed;
@@ -18,14 +42,12 @@
       padding: 0.875rem;
       line-height: 1;
       text-decoration: none; }
-      .navbar-items a.active {
+      .navbar-items a:active {
         background-color: #4CAF50;
         color: white; }
       .navbar-items a:hover {
         background-color: #ddd;
         color: black; }
-    .navbar-items .schedule-button {
-      display: inline-block; }
 
 /* Page content */
 .content {
@@ -35,16 +57,27 @@
 .sticky + .content {
   padding-top: 60px; }
 
+.cover {
+  position: absolute;
+  top: 2.75rem;
+  height: 100%;
+  width: 100%;
+  background-image: url(./images/cover/cover.jpg);
+  background-size: cover;
+  filter: brightness(40%) opacity(0.8); }
+
 .header {
   top: 2.75rem;
   height: 100vh;
-  position: relative; }
+  position: relative;
+  color: white; }
   .header .heading {
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center; }
+    text-align: center;
+    z-index: 5; }
     .header .heading__primary {
       font-size: 2.5rem; }
     .header .heading .logo-box {
@@ -56,12 +89,13 @@
       display: flex;
       align-items: center; }
       .header .heading .logo-box__line {
-        width: 35%;
+        width: 30%;
         height: 3px;
-        background-color: black; }
+        margin: 0 5%;
+        background-color: white; }
       .header .heading .logo-box__logo {
         width: 20%;
-        margin: 0 5%; }
+        filter: invert(100%); }
     .header .heading__secondary {
       font-size: 2rem; }
   .header .jump-to-content-button {
@@ -125,3 +159,38 @@
       display: table-cell;
       vertical-align: middle;
       text-align: center; }
+
+.services-section {
+  position: relative; }
+  .services-section .services-title {
+    position: relative;
+    margin: 3rem auto;
+    text-align: center; }
+  .services-section .services-card {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    margin: auto;
+    overflow: hidden; }
+    .services-section .services-card__image {
+      background-image: url(./images/cards/students.jpg);
+      background-size: cover;
+      position: absolute;
+      width: 100%;
+      height: 300px; }
+    .services-section .services-card__overlay {
+      position: absolute;
+      background-color: rgba(51, 51, 51, 0.8);
+      height: 300px;
+      width: 100%;
+      content: "";
+      z-index: +1;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: .15s all ease-out; }
+      .services-section .services-card__overlay-text {
+        font-weight: bold;
+        font-size: 2rem;
+        color: #e4e1e1; }

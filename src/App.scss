@@ -1,5 +1,45 @@
 $color-dark: #333;
+$color-dark-opaque: rgba(51, 51, 51, .8);
 $color-white: rgb(228, 225, 225);
+$color-white-opaque: rgba(228, 225, 225, .6);
+
+
+
+@keyframes moveInBottom {
+  0% {
+      transform: translateY(300px);
+  }
+
+  100% {
+      transform: translateY(0);
+  }
+}
+
+.schedule-button {
+  display: inline-block;
+  
+    
+  a {
+    color: $color-white;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1;
+    text-decoration: none;
+    padding: .875rem;
+    border: #ddd solid 0.25rem;
+    background-color: #333;
+
+    &:active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    &:hover {
+      background-color: #ddd;
+      color: black;
+    }
+  }
+}
 
 /* Style the navbar */
 .navbar {
@@ -25,7 +65,7 @@ $color-white: rgb(228, 225, 225);
       line-height: 1;
       text-decoration: none;
 
-      &.active {
+      &:active {
         background-color: #4CAF50;
         color: white;
       }
@@ -36,9 +76,7 @@ $color-white: rgb(228, 225, 225);
       }
     }
 
-    .schedule-button {
-      display: inline-block;
-    }
+    
 
   }
 }
@@ -53,10 +91,25 @@ $color-white: rgb(228, 225, 225);
   padding-top: 60px;
 }
 
+.cover {
+  position: absolute;
+  top: 2.75rem;
+  height: 100%;
+  width: 100%;
+  background-image: url(./images/cover/cover.jpg);
+  background-size: cover;
+  filter: brightness(40%) opacity(.8);
+}
+
 .header {
   top: 2.75rem;
   height: 100vh;
   position: relative;
+  //background-color: $color-dark-opaque;
+  //opacity: 0.6;
+
+  //filter: brightness(50%) opacity(.8);
+  color: white;
 
   .heading {
     position: absolute;
@@ -64,6 +117,9 @@ $color-white: rgb(228, 225, 225);
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    //background-color: $color-white-opaque;
+    //filter: brightness(130%) !important;
+    z-index: 5;
   
     &__primary {
       font-size: 2.5rem;
@@ -75,22 +131,24 @@ $color-white: rgb(228, 225, 225);
       -webkit-align-items: center; /* Safari 7.0+ */
       display: flex;
       align-items: center;
+      
 
       &__line {
-        width: 35%;
+        width: 30%;
         height: 3px;
-        background-color: black;
+        margin: 0 5%;
+        background-color: white;
       }
   
       &__logo {
         width: 20%;
-        margin: 0 5%;
-  
-        // .logo-frame, .logo-continent {
-        //   background-color: black;
+        filter: invert(100%);
+        
+        //  .logo-frame, .logo-continent {
+        //   background-color: white;
         //   color: white;
         // } 
-      }     
+        }    
     }
 
     &__secondary {
@@ -176,8 +234,52 @@ $color-white: rgb(228, 225, 225);
       text-align: center;
     }
   }
-  
 }
 
+.services-section {
+  position: relative;
+
+  .services-title {
+    position: relative;
+    margin: 3rem auto;
+    text-align: center;
+  }
+
+  .services-card {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+
+    &__image {
+      background-image: url(./images/cards/students.jpg);
+      background-size: cover;
+      position: absolute;
+      width: 100%;
+      height: 300px;
+    }
+
+    &__overlay {
+      position: absolute;
+      background-color: $color-dark-opaque;
+      height: 300px;
+      width: 100%;
+      content: "";
+      z-index: +1;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: .15s all ease-out;
+
+      &-text {
+        font-weight: bold;
+        font-size: 2rem;
+        color: $color-white;
+      }
+    }
+  }
+}
 
 
