@@ -129,11 +129,14 @@ $color-white-opaque: rgba(228, 225, 225, .6);
         height: 3px;
         margin: 0 5%;
         background-color: white;
+        -webkit-filter: drop-shadow( 0.5rem 0.5rem 0.3rem rgba(0, 0, 0, .7));
+        filter: drop-shadow( 0.5rem 0.5rem 0.3rem rgba(0, 0, 0, .7));
       }
   
       &__logo {
-        width: 20%;
-        filter: invert(100%); 
+        width: 20%;  
+        -webkit-filter: invert(100%) drop-shadow( 0.5rem 0.5rem 0.3rem rgba(0, 0, 0, .7));
+        filter: invert(100%) drop-shadow( 0.5rem 0.5rem 0.3rem rgba(0, 0, 0, .7));
       }    
     }
 
@@ -175,13 +178,16 @@ $color-white-opaque: rgba(228, 225, 225, .6);
 
 .about {
   position: relative;
+  background-color: $color-dark;
+  padding: 4rem;
 
   &-section {
     width: 70%;
     margin: 3rem auto;
-    outline: 3px solid $color-white;
+    outline: 3px solid $color-dark;
     outline-offset: -10px;
     display: table;
+    background-color: $color-white;
 
     &__picture {
 

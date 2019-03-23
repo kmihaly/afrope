@@ -27,5 +27,3 @@ class Header extends Component {
 }
 
 export default Header;
-
-//src/images/AfRope_logo.svg

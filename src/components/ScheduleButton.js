@@ -4,7 +4,7 @@ class ScheduleButton extends Component {
     render() {
         return (
             <div className='schedule-button'>
-                <a href='#scheduleAcall'>Schedule a Call</a>
+                <a href='#scheduleAcall'>SCHEDULE A CALL</a>
             </div>
         );
     }
