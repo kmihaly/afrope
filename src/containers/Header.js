@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import ScheduleButton from '../components/ScheduleButton';
+import React, { Component } from 'react'
+import ScheduleButton from '../components/ScheduleButton'
+import LogoBox from '../components/LogoBox'
 
 class Header extends Component {
     render() {
@@ -9,11 +10,8 @@ class Header extends Component {
             <div className="header">
                 <div className="heading">
                     <h1 className="heading__primary">AfRope Consultancy</h1>
-                    <div className="logo-box">
-                        <div className="logo-box__line"></div>
-                        <img src={require('../images/afrope.svg')} alt="Logo" className="logo-box__logo" />
-                        <div className="logo-box__line"></div>
-                    </div>
+                    <LogoBox style={"logo-box--white"}>
+                    </LogoBox>
                     <h1 className="heading__secondary">From Africa to Europe</h1>
                     <ScheduleButton>
                     </ScheduleButton>

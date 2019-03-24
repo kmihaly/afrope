@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ScheduleButton from '../components/ScheduleButton';
+import Logo from '../components/Logo';
 
 class Navbar extends Component {
 
@@ -7,6 +8,8 @@ class Navbar extends Component {
 
         return (
             <div className="navbar">
+                <Logo style={"navbar__logo"}>
+                </Logo>
                 <div className="navbar-items">
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
