@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Logo extends Component {
 
     render() {
-        return <img src={require('../images/afrope.svg')} alt="Logo" className={this.props.style} />
+        return <img src={require('../images/logo/afrope.svg')} alt="Logo" className={this.props.logoStyle} />
     }
 }
 

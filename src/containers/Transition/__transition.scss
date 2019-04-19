@@ -1,0 +1,16 @@
+.transition {
+    position: relative;
+    padding: 4rem;
+  
+    &-box {
+      width: 65%;
+      position: relative;
+      margin: 2rem auto;
+  
+      &__text {
+        font-size: 1.4rem;
+        position: relative;
+        text-align: center;
+      }
+    }
+  }

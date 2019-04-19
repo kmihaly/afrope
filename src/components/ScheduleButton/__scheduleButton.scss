@@ -1,0 +1,25 @@
+.schedule-button {
+    display: inline-block;
+    position: relative;
+    
+    a {
+      color: $color-light;
+      text-align: center;
+      font-size: 1.2rem;
+      line-height: 1;
+      text-decoration: none;
+      padding: .875rem;
+      border: #ddd solid 0.25rem;
+      background-color: #333;
+  
+      &:active {
+        background-color: #4CAF50;
+        color: $color-white;
+      }
+  
+      &:hover {
+        background-color: $color-light;
+        color: $color-black;
+      }
+    }
+  }

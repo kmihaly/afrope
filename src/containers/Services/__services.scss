@@ -1,0 +1,159 @@
+.services-section {
+    position: relative;
+  
+    .services-title {
+      position: relative;
+      margin: 3rem auto;
+      text-align: center;
+    }
+  
+    .services-card {
+      position: relative;
+      height: 300px;
+      width: 100%;
+      margin: auto;
+      overflow: hidden;
+      background-image: url(./images/cards/students.jpg);
+      background-size: cover;
+      background-position: center; 
+      width: 100%;
+      height: 300px;
+
+      &__capture {
+        position: absolute;
+        z-index: +10;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: bold;
+        font-size: 2rem;
+        color: $color-white;
+        filter: drop-shadow(0.5rem 0.5rem 0.6rem rgba(0, 0, 0, 0.9)); 
+      }
+  
+      &__overlay {
+        position: absolute;
+        background-color: $color-dark-opaque;
+        height: 300px;
+        width: 100%;
+        content: "";
+        z-index: +100;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .15s all ease-out;
+  
+        &-text {
+          font-weight: bold;
+          font-size: 1.7rem;
+          color: $color-white;
+        }
+      }
+    }
+  
+    .graybox {
+      background-color: $color-dark;
+      padding: 4rem 8rem;
+    
+      &__description {
+        padding: 4rem;
+        background-color: $color-light;
+
+        &--2columns {
+          column-count: 2;
+          column-gap: 2rem;
+          column-rule-style: solid;
+          column-rule-width: 3px;
+          column-rule-color: $color-dark-opaque;
+        }
+      }
+    
+      &__packages {
+        padding: 0 4rem 0 4rem;
+        background-color: $color-light;
+        
+        .picture-normal {
+          height: 250px;
+        }
+    
+        .picture-wide {
+          height: 250px;
+        }
+    
+        .picture-tall {
+          height: 500px;
+        }
+    
+        @mixin bg-image-props {
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          transition: all 500ms ease-out 0s;
+          width: 100%;
+          height: 100%;
+        }
+    
+        .package {
+          width: 100%;
+          overflow: hidden;
+          position: relative;
+          display: block;
+    
+          &-bestcountry {
+            background-image: url(../src/images/package-images/package5.jpg);
+            @include bg-image-props;
+          }
+          &-university {
+            background-image: url(../src/images/package-images/package2.jpg);
+            @include bg-image-props;
+          }
+          &-masterprogramme {
+            background-image: url(../src/images/package-images/package3.jpg);
+            @include bg-image-props;
+          }
+          &-appguide {
+            background-image: url(../src/images/package-images/package4.jpg);
+            @include bg-image-props;
+          }
+          &-accommodation {
+            background-image: url(../src/images/package-images/package1.jpg);
+            @include bg-image-props;
+          }
+          &-scholarships {
+            background-image: url(../src/images/package-images/package7.jpg);
+            @include bg-image-props;
+          }
+          &-information {
+            background-image: url(../src/images/package-images/package8.jpg);
+            @include bg-image-props;
+          }
+          &-culture {
+            background-image: url(../src/images/package-images/package9.jpg);
+            @include bg-image-props;
+          }
+    
+          &-caption {
+            text-transform: capitalize;
+            color: $color-white;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+            transition: all 200ms ease-out;
+            filter: drop-shadow(8px 8px 10px $color-black);
+          }
+        }
+      } 
+
+      &__schedule {
+        text-align: center;
+        position: relative;
+        margin-top: 2rem;
+      }
+    }
+  }

@@ -1,0 +1,54 @@
+.about {
+    position: relative;
+    background-color: $color-dark;
+    padding: 4rem;
+  
+    &-section {
+      width: 70%;
+      margin: 3rem auto;
+      outline: 3px solid $color-dark;
+      outline-offset: -10px;
+      display: table;
+      background-color: $color-light;
+  
+      &__picture {
+  
+        @mixin picture {
+          width: 50%;
+          height: 300px;
+          background-size: cover;
+          display: table-cell;
+        }
+  
+        &-1 {
+          @include picture;
+          background-image: url(./images/tiles/tile1.jpg);
+        }
+  
+        &-2 {
+          @include picture;
+          background-image: url(./images/tiles/tile2.jpg);
+        }
+  
+        &-3 {
+          @include picture;
+          background-image: url(./images/tiles/tile3.jpg);
+        }
+  
+        &-4 {
+          @include picture;
+          background-image: url(./images/tiles/tile4.jpg)
+        }
+      }
+  
+      &__text {
+        height: 300px;
+        box-sizing: border-box;
+        padding: 2rem;
+        font-size: 1.2rem;
+        display: table-cell; 
+        vertical-align: middle; 
+        text-align: center;
+      }
+    }
+  }
