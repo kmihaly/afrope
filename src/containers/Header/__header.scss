@@ -12,7 +12,8 @@
     top: 3.45rem;
     height: 100vh;
     position: relative;
-    color: $color-light;
+    color: $color-white;
+    font-family: goudy;
   
     .heading {
       position: absolute;
@@ -25,11 +26,15 @@
     
       &__primary {
         font-size: 2.5rem;
+        font-family: goudy;
+        letter-spacing: .2rem;
       }
   
       &__secondary {
         font-size: 2rem;
         margin-bottom: 2rem;
+        text-transform: uppercase;
+        font-family: goudyBold;
       }
     }
   

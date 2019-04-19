@@ -1,0 +1,13 @@
+@font-face {
+    font-family: goudy;
+    src: url(./GOUDOS.ttf);
+  }
+
+@font-face {
+font-family: goudyBold;
+src: url(./GOUDOSB.TTF);
+}
+
+h1, h2, h3, h4 {
+    font-family: goudyBold;
+}

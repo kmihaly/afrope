@@ -6,20 +6,20 @@ import ScheduleButton from '../../components/ScheduleButton/ScheduleButton'
 class Services extends Component {
 	state = {
 		top: '300px',
-		isProcessCaptureVisible: "block"
+		isProcessCaptionVisible: "block"
 	}
 
 	reduceOverlayTop = () => {
 		this.setState({
 			top: '0px',
-			isProcessCaptureVisible: "none"
+			isProcessCaptionVisible: "none"
 		})
 	}
 
 	increaseOverlayTop = () => {
 		this.setState({
 			top: '300px',
-			isProcessCaptureVisible: "block"
+			isProcessCaptionVisible: "block"
 		})
 	}
 
@@ -27,14 +27,14 @@ class Services extends Component {
 		return (
 			<div className="services-section">
 				<div className="services-title">
-					<h1 className="heading__secondary">Services</h1>
+					<h1 className="services-title--size">Services</h1>
 				</div>
 				<div
 					className="services-card"
 					onMouseEnter={this.reduceOverlayTop}
 					onMouseLeave={this.increaseOverlayTop}
 				>
-					<span className="services-card__capture" style={{display: this.state.isProcessCaptureVisible}}>
+					<span className="services-card__caption" style={{display: this.state.isProcessCaptionVisible}}>
 					OUR PROCESS
 					</span>
 					<div className="services-card__overlay" style={{ top: this.state.top }}>
@@ -63,34 +63,34 @@ class Services extends Component {
 					<div className="graybox__packages">
 						<div className="row">
 							<div className="col-1-3">
-								<Package pictureClass="package-bestcountry" sizeClasses="picture-tall" capture="the best country"/>
+								<Package pictureClass="package-bestcountry" sizeClasses="picture-tall" caption="the best country"/>
 							</div>
 							<div className="col-2-3">
 								<div className="row">
 									<div className="col-1-2">
-										<Package pictureClass="package-university" sizeClasses="picture-normal" capture="the best matching universities"/>
+										<Package pictureClass="package-university" sizeClasses="picture-normal" caption="the best matching universities"/>
 									</div>
 									<div className="col-1-2">
-										<Package pictureClass="package-masterprogramme" sizeClasses="picture-normal" capture="the best matching master programme"/>
+										<Package pictureClass="package-masterprogramme" sizeClasses="picture-normal" caption="the best matching master programme"/>
 									</div>
 								</div>
 								<div className="row">
-									<Package pictureClass="package-appguide" sizeClasses="picture-wide" capture="step by step application guide"/>	
+									<Package pictureClass="package-appguide" sizeClasses="picture-wide" caption="step by step application guide"/>	
 								</div>					
 							</div>
 						</div>
 						<div className="row">
-							<Package pictureClass="package-information" sizeClasses="picture-normal" capture="travel and visa information"/>
+							<Package pictureClass="package-information" sizeClasses="picture-normal" caption="travel and visa information"/>
 						</div>
 						<div className="row">
 							<div className="col-1-3">
-								<Package pictureClass="package-scholarships" sizeClasses="picture-normal" capture="scholarships and application guide"/>
+								<Package pictureClass="package-scholarships" sizeClasses="picture-normal" caption="scholarships and application guide"/>
 							</div>
 							<div className="col-1-3">
-								<Package pictureClass="package-culture" sizeClasses="picture-normal" capture="culture"/>
+								<Package pictureClass="package-culture" sizeClasses="picture-normal" caption="culture"/>
 							</div>
 							<div className="col-1-3">
-								<Package pictureClass="package-accommodation" sizeClasses="picture-normal" capture="accommodation"/>
+								<Package pictureClass="package-accommodation" sizeClasses="picture-normal" caption="accommodation"/>
 							</div>
 						</div>
 					</div>

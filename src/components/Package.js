@@ -9,7 +9,7 @@ class Package extends Component {
         opacity: 0
     }
     
-    showCapture = () => {
+    showCaption = () => {
         this.setState({
             transform_scale: 1.2,
             blur: 5,
@@ -18,7 +18,7 @@ class Package extends Component {
         })
     }
     
-    hideCapture = () => {
+    hideCaption = () => {
         this.setState({
             transform_scale: 1,
             blur: 0,
@@ -30,14 +30,14 @@ class Package extends Component {
     render() {
         return (
             <>
-                <div className={"package " + this.props.sizeClasses} onMouseEnter={this.showCapture} onMouseLeave={this.hideCapture}>
+                <div className={"package " + this.props.sizeClasses} onMouseEnter={this.showCaption} onMouseLeave={this.hideCaption}>
                     <div
                         style={{ transform: 'scale(' + this.state.transform_scale + ')', filter: 'blur(' + this.state.blur + 'px) brightness(' + this.state.brightness + '%)' }}
                         className={this.props.pictureClass}
                     >
                     </div>
                     <span className="package-caption" style={{ opacity: this.state.opacity }}>
-                        {this.props.capture}
+                        {this.props.caption}
                     </span>
                 </div> 
             </>
