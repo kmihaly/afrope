@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import LogoBox from '../../components/LogoBox/LogoBox'
 import Package from '../../components/Package'
+import SectionTitle from '../../components/SectionTitle/SectionTitle'
 import ScheduleButton from '../../components/ScheduleButton/ScheduleButton'
 
 class Services extends Component {
@@ -26,9 +27,7 @@ class Services extends Component {
 	render() {
 		return (
 			<div className="services-section">
-				<div className="services-title">
-					<h1 className="services-title--size">Services</h1>
-				</div>
+				<SectionTitle text="Services"/>
 				<div
 					className="services-card"
 					onMouseEnter={this.reduceOverlayTop}

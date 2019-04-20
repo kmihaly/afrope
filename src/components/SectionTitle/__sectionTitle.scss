@@ -1,0 +1,21 @@
+.section-title {
+    position: relative;
+
+    &__graybox {
+      text-align: center;
+      background-color: $color-dark;
+      padding: 4rem 8rem 0 8rem;
+
+      &--font {
+      font-size: 2.5rem;
+      letter-spacing: 0.1rem;
+      margin: 0;
+      background-color: $color-light;
+      color: $color-black;
+      padding-top: 4rem;
+      padding-bottom: 2rem;
+    }
+    }
+
+    
+}

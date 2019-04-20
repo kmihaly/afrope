@@ -7,7 +7,7 @@ class Header extends Component {
         return (<>
             <div className="cover">
             </div>
-            <div className="header">
+            <div className="header-section">
                 <div className="heading">
                     <h1 className="heading__primary">AfRope Consultancy</h1>
                     <LogoBox boxStyle="logo-box--white">
