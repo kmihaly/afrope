@@ -5,11 +5,14 @@
   
     .about-item {
       width: 100%;
-      margin: 3rem auto;
       outline: 3px solid $color-dark;
       outline-offset: -10px;
       display: table;
       background-color: $color-light;
+
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
 
       &__text {
         height: 300px;

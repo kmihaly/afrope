@@ -6,15 +6,17 @@
     &-box {
       width: 100%;
       position: relative;
-      margin: 2rem auto;
-      padding: 4rem;
-      background-color: $color-dark;
+      //margin: 2rem auto;
+      //padding: 4rem;
+      text-align: center;
+      // background-color: $color-dark;
   
       &__text {
         font-family: goudy;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         font-style: italic;
-        color: $color-white;
+        font-weight: bold;
+        // color: $color-white;
         position: relative;
         text-align: center;
       }

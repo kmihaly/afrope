@@ -49,7 +49,6 @@
   
     .graybox {
       background-color: $color-dark;
-      //padding: 0 8rem 4rem 8rem;
     
       &__description {
         padding: 4rem;
@@ -59,7 +58,7 @@
           column-count: 2;
           column-gap: 2rem;
           column-rule-style: solid;
-          column-rule-width: 3px;
+          column-rule-width: .15rem;
           column-rule-color: $color-dark-opaque;
         }
       }

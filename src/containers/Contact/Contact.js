@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import video from '../../images/video/1008365473-preview.mp4';
 
 class Contact extends Component {
@@ -8,16 +9,36 @@ class Contact extends Component {
                 <div className="bg-video">
                     <video className="bg-video__content" autoPlay muted loop>
                         <source src={video} type="video/mp4" />
-                        {/* <source src="img/video.webm" type="video/webm" /> */}
+                        <source src={video} type="video/ogg" />
+                        <source src={video} type="video/webm" />
                         Your browser is not supported!
                     </video>
                 </div>
                 <div>
-                    Nisi tempor commodo ipsum mollit dolor voluptate ullamco laboris id quis. Proident sunt dolore anim dolore occaecat reprehenderit quis ea. Consequat sit voluptate anim sint laboris pariatur laboris aliqua id consequat. Minim cupidatat in elit reprehenderit cupidatat. Nostrud aliquip culpa quis velit consectetur quis ullamco labore cupidatat Lorem dolor eu. Commodo dolor anim dolor fugiat elit cillum eiusmod enim nulla tempor consectetur.
-
-Magna ut ex veniam irure. Cupidatat sit commodo amet consequat velit id laboris. Incididunt incididunt qui culpa laborum tempor voluptate aliquip quis. Aliquip exercitation nulla duis mollit nisi minim laboris ad ex. Ut exercitation nulla amet do culpa aliquip ad qui exercitation excepteur. Veniam pariatur consectetur cupidatat id officia dolor voluptate consectetur minim est ipsum adipisicing. Cillum tempor cupidatat occaecat exercitation et aute duis anim non.
-
-Dolor minim consectetur aute dolor duis adipisicing do nostrud consequat Lorem culpa. In deserunt est magna occaecat duis in voluptate fugiat irure ad Lorem. Pariatur ut exercitation dolore aliquip est labore dolor ea esse voluptate irure. Aute aliqua duis cupidatat ipsum voluptate.
+                    <p className="section-contact__title">Get in Touch</p>
+                    <ul>
+                    <li><p>Schedule a call with us (totally free, no hidden costs)</p></li>
+                    <li><p>Write an email: consulting@afrope.org</p></li>
+                    <li><p>Skype: afropeconsulting</p></li>
+                    <li><p>Or send a message:</p></li>
+                    </ul>
+                    <div className="section-contact__form">
+                        <Form>
+                            <FormGroup>
+                                <Label for="exampleName">Name</Label>
+                                <Input type="name" placeholder="Your name..." id="exampleName"/>
+                            </FormGroup>
+                            <FormGroup>
+                                <Label for="exampleEmail">Email</Label>
+                                <Input type="email" name="email" id="exampleEmail" placeholder="Your email address..." />
+                            </FormGroup>
+                            <FormGroup>
+                                <Label for="exampleText">Message</Label>
+                                <Input type="textarea" name="text" id="exampleText" placeholder="Type your message here" />
+                            </FormGroup>
+                            <Button>Submit</Button>
+                        </Form>
+                    </div>
                 </div>
             </div>
         );
