@@ -1,17 +1,18 @@
-@import '../scss/abstracts/_variables';
+@import '../scss/abstracts/variables';
 
-@import '../scss/base/_animations';
-@import '../scss/base/_typography';
+@import '../scss/base/animations';
+@import '../scss/base/typography';
 
-@import '../scss/layout/_grid';
+@import '../scss/layout/grid';
 
-@import '../src/components/LogoBox/_logoBox';
-@import '../src/components/ScheduleButton/_scheduleButton';
-@import '../src/components/SectionTitle/_sectionTitle';
+@import '../src/components/LogoBox/logoBox';
+@import '../src/components/ScheduleButton/scheduleButton';
+@import '../src/components/SectionTitle/sectionTitle';
 
-@import '../src/containers/About/_about';
-@import '../src/containers/Header/_header';
-@import '../src/containers/Navbar/_navbar';
-@import '../src/containers/Services/_services';
-@import '../src/containers/Clients/_clients';
-@import '../src/containers/Transition/_transition';
+@import '../src/containers/About/about';
+@import '../src/containers/Header/header';
+@import '../src/containers/Navbar/navbar';
+@import '../src/containers/Transition/transition';
+@import '../src/containers/Services/services';
+@import '../src/containers/Clients/clients';
+@import '../src/containers/Contact/contact';

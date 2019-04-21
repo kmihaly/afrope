@@ -1,0 +1,25 @@
+.section-contact {
+    position: relative;
+    background: transparent;
+    color: $color-white;
+    padding: 4rem 8rem 4rem 8rem;
+
+    .bg-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        //opacity: .15;
+        overflow: hidden;
+        filter: brightness(30%);
+
+        &__content {
+            height: 100%;
+            width: 100%;
+            object-fit: cover !important;
+        }
+    }
+
+}

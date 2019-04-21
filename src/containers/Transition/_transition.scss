@@ -1,0 +1,22 @@
+.transition {
+    position: relative;
+    padding: 4rem 8rem 4rem 8rem;
+    background-color: $color-light;
+  
+    &-box {
+      width: 100%;
+      position: relative;
+      margin: 2rem auto;
+      padding: 4rem;
+      background-color: $color-dark;
+  
+      &__text {
+        font-family: goudy;
+        font-size: 1.5rem;
+        font-style: italic;
+        color: $color-white;
+        position: relative;
+        text-align: center;
+      }
+    }
+  }

@@ -1,10 +1,10 @@
 .about-section {
     position: relative;
     background-color: $color-dark;
-    padding: 4rem;
+    padding: 4rem 8rem 4rem 8rem;
   
     .about-item {
-      width: 70%;
+      width: 100%;
       margin: 3rem auto;
       outline: 3px solid $color-dark;
       outline-offset: -10px;

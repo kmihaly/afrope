@@ -13,11 +13,15 @@
     }
 
     .clients-carousel {
-        display: flex;
-        justify-content: center;
+        //display: flex;
+        //justify-content: center;
         overflow: hidden;
         background-color: $color-light;
-        padding-bottom: 4rem;
+        padding: 0 8rem 4rem 8rem;
+    }
+
+    .carousel-img {
+        width: 100%;
     }
 
 }

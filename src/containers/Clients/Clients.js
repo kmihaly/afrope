@@ -68,7 +68,12 @@ class Clients extends Component {
                     onExited={this.onExited}
                     key={item.src}
                 >
-                    <img src={item.src} alt={item.altText} className="carousel-img"/>
+                    <img 
+                        src={item.src} 
+                        alt={item.altText} 
+                        className="carousel-img" 
+                        
+                    />
                     <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
                 </CarouselItem>
             );
@@ -76,11 +81,11 @@ class Clients extends Component {
 
         return (
             <>
-                <SectionTitle text="Clients" />
-                <div className="clients-section">  
+                <div className="clients-section">
+                    <SectionTitle text="Clients" />
                     <div className="clients-text">
                         <span className="clients-text__font">Check out what our clients think of our work.</span>
-                    </div>                
+                    </div>
                     <div className="clients-carousel">
                         <Carousel
                             activeIndex={activeIndex}

@@ -1,18 +1,16 @@
 .services-section {
     position: relative;
     background-color: $color-dark;
+    padding: 0 8rem 0 8rem;
   
     .services-card {
       position: relative;
       height: 300px;
       width: 100%;
-      margin: auto;
       overflow: hidden;
       background-image: url(./images/cards/students.jpg);
       background-size: cover;
       background-position: center; 
-      width: 100%;
-      height: 300px;
 
       &__caption {
         position: absolute;
@@ -51,7 +49,7 @@
   
     .graybox {
       background-color: $color-dark;
-      padding: 0 8rem 4rem 8rem;
+      //padding: 0 8rem 4rem 8rem;
     
       &__description {
         padding: 4rem;
