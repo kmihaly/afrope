@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import Navbar from './containers/Navbar/Navbar' 
+import { Scrollbar } from 'react-scrollbars-custom'
+import Navbar from './containers/Navbar/Navbar'
 import Header from './containers/Header/Header'
 import Transition from './containers/Transition/Transition'
-import About from './containers/About/About' 
+import About from './containers/About/About'
 import Services from './containers/Services/Services'
 import Clients from './containers/Clients/Clients'
 import Contact from './containers/Contact/Contact'
@@ -17,28 +18,17 @@ class App extends Component {
       <>
         <Navbar>
         </Navbar>
-        <Header>
-
-        </Header>
-        <Transition>
-
-        </Transition>
-        <About>
-
-        </About>
-        <Services>
-
-        </Services>
-        <Clients>
-
-        </Clients>
-        <Contact>
-
-        </Contact>
-        <Footer>
-
-        </Footer>
-
+        <div className="main">
+          <Scrollbar style={{ width: '100%', height: '100%', minHeight: 100 }} >
+            <Header />
+            <Transition />
+            <About />
+            <Services />
+            <Clients />
+            <Contact />
+            <Footer />
+          </Scrollbar>
+        </div>
       </>
     );
   }

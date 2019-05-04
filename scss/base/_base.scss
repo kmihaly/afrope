@@ -1,0 +1,9 @@
+body, #root {
+    height: 100%;
+}
+
+.main {
+    position: relative;
+    top: 3.45rem;
+    height: calc(100% - 3.45rem);
+}
