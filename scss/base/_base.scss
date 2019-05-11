@@ -2,8 +2,13 @@ body, #root {
     height: 100%;
 }
 
-.main {
+.scrollbar-frame {
     position: relative;
     top: 3.45rem;
     height: calc(100% - 3.45rem);
+}
+
+.ScrollbarTrack-Y {
+    height: 100% !important;
+    top: 0 !important;
 }

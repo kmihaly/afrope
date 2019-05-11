@@ -5,20 +5,18 @@ import LogoBox from '../../components/LogoBox/LogoBox'
 class Header extends Component {
     render() {
         return (<>
-            <div className="cover">
+            <div className="cover" id="home">
             </div>
-            <div className="header-section">
+            <header className="header-section">
                 <div className="heading">
                     <h1 className="heading__primary">AfRope Consultancy</h1>
-                    <LogoBox boxStyle="logo-box--white">
-                    </LogoBox>
+                    <LogoBox color="white" logoWidthPercent="20" />
                     <h1 className="heading__secondary">From Africa to Europe</h1>
-                    <ScheduleButton>
-                    </ScheduleButton>
+                    <ScheduleButton />
                 </div>
-                <div className="jump-to-content-button">
-                </div>
-            </div>
+                <a href="#about" className="jump-to-content-button">
+                </a>
+            </header>
             </>
         );
     }

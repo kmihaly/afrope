@@ -4,6 +4,7 @@
     -webkit-align-items: center; /* Safari 7.0+ */
     display: flex;
     align-items: center;
+    padding: 2rem;
 
     &__line {
         width: 100%;
@@ -12,16 +13,15 @@
     }
 
     &__logo {
-        width: 10%; 
         margin: 0 5%;
     }    
 }
 
-.logo-box--black {
+.black {
     @include logo-box;
 }
 
-.logo-box--white {
+.white {
     @include logo-box;
 
     &__line {

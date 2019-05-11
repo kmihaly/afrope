@@ -20,7 +20,6 @@
         transform: translate(-50%, -50%);
         font-weight: bold;
         font-size: 2rem;
-        font-family: goudyBold;
         color: $color-white;
         text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.9); 
       }
@@ -41,7 +40,6 @@
         &-text {
           font-weight: bold;
           font-size: 1.7rem;
-          font-family: goudyBold;
           color: $color-white;
         }
       }
@@ -149,5 +147,11 @@
         position: relative;
         margin-top: 2rem;
       }
+    }
+
+    .break-section {
+      position: relative;
+      background-color: $color-dark;
+      height: 4rem;
     }
   }

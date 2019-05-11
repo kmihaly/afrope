@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Scrollbar } from 'react-scrollbars-custom'
-import Navbar from './containers/Navbar/Navbar'
+import Navigation from './containers/Navigation/Navigation'
 import Header from './containers/Header/Header'
 import Transition from './containers/Transition/Transition'
 import About from './containers/About/About'
@@ -16,16 +16,17 @@ class App extends Component {
   render() {
     return (
       <>
-        <Navbar>
-        </Navbar>
-        <div className="main">
-          <Scrollbar style={{ width: '100%', height: '100%', minHeight: 100 }} >
+        <Navigation />
+        <div className="scrollbar-frame">
+          <Scrollbar style={{ width: '100%', height: '100%', minHeight: 100 }}  >
             <Header />
-            <Transition />
-            <About />
-            <Services />
-            <Clients />
-            <Contact />
+            <main>
+              <Transition />
+              <About />
+              <Services />
+              <Clients />
+              <Contact />
+            </main>
             <Footer />
           </Scrollbar>
         </div>

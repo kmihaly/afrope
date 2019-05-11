@@ -5,7 +5,7 @@ import video from '../../images/video/1008365473-preview.mp4';
 class Contact extends Component {
     render() {
         return (
-            <div className="section-contact">
+            <div className="contact-section" id="contact">
                 <div className="bg-video">
                     <video className="bg-video__content" autoPlay muted loop>
                         <source src={video} type="video/mp4" />
@@ -15,14 +15,14 @@ class Contact extends Component {
                     </video>
                 </div>
                 <div>
-                    <p className="section-contact__title">Get in Touch</p>
+                    <p className="contact-section__title">Get in Touch</p>
                     <ul>
                     <li><p>Schedule a call with us (totally free, no hidden costs)</p></li>
                     <li><p>Write an email: consulting@afrope.org</p></li>
                     <li><p>Skype: afropeconsulting</p></li>
                     <li><p>Or send a message:</p></li>
                     </ul>
-                    <div className="section-contact__form">
+                    <div className="contact-section__form">
                         <Form>
                             <FormGroup>
                                 <Label for="exampleName">Name</Label>

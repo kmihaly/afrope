@@ -10,7 +10,6 @@
 }
 
 .header-section {
-    //top: 3.45rem;
     height: 100%;
     position: relative;
     color: $color-white;
@@ -27,15 +26,17 @@
     
       &__primary {
         font-size: 2.5rem;
-        font-family: goudy;
-        letter-spacing: .2rem;
+        font-weight: 700;
+        font-family: goudyBold;
+        letter-spacing: .4rem;
       }
   
       &__secondary {
-        font-size: 2rem;
-        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        margin-bottom: 4rem;
         text-transform: uppercase;
         font-family: goudyBold;
+        letter-spacing: .1rem;
       }
     }
   
@@ -48,6 +49,7 @@
       filter: invert(100%);
       bottom: 75px;
       left: calc(50% - 25px);
+      z-index: +2000;
       cursor: pointer;
     }
   }

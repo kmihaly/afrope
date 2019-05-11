@@ -26,8 +26,7 @@ class Services extends Component {
 
 	render() {
 		return (
-			<div className="services-section">
-				<SectionTitle text="Services"/>
+			<div className="services-section" id="services">
 				<div
 					className="services-card"
 					onMouseEnter={this.reduceOverlayTop}
@@ -38,7 +37,7 @@ class Services extends Component {
 					</span>
 					<div className="services-card__overlay" style={{ top: this.state.top }}>
 						<span className="services-card__overlay-text">
-						Our process is powerful:<br />
+						OUR PROCESS IS POWERFUL<br />
 						1. We analyze your need and desire<br />
 						2. We figure out the best course of action to
 						take<br />
@@ -47,10 +46,10 @@ class Services extends Component {
 						</span>
 					</div>
 				</div>
+				<SectionTitle text="Services" />
 				<div className="graybox">
 					<div className="graybox__description graybox__description--2columns">
-						<LogoBox boxStyle="logo-box--black">
-						</LogoBox>
+						<LogoBox color="black" logoWidthPercent="20" />
 						<p>You live in African and you are an engineer or business undergrad student? Or you have started working but you decided to move your career to the next level with a European degree? Do you simply want to get a high paying career and you know that a degree from oversees could help you achieve it? A European university might be the key for it! We help you finding the best match to reach your goals!</p>
 						<p>First things first, a degree from oversees has a great value we all know that. It is not a secret that employers prefer to hire those fresh graduates who have overseas experience. The starting salary of these students is also much higher than those who have never left their countries for academic purposes.</p>
 						<p>Let us suggest you to check our publication section to familiarize yourself with the pros and cons of a European master degrees. We add here only those articles that are useful from the African perspective. It means that you do not have to do your research and find the information that suits you the most - we have done it for you.</p>
@@ -105,6 +104,8 @@ class Services extends Component {
 						<ScheduleButton />
 					</div>
 					</div>
+				</div>
+				<div className="break-section">
 				</div>
 			</div>
 		);

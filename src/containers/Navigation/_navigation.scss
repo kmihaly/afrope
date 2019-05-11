@@ -1,5 +1,9 @@
-/* Style the navbar */
+.navbar-dark .navbar-nav .nav-link {
+  color: $color-white;
+}
+
 .navbar {
+    
     position: fixed;
     height: auto;
     background-color: $color-dark;
@@ -7,12 +11,13 @@
     top: 0;
     width: 100%;
     z-index: 10000;
+
+    &-brand {
+      padding: 0;
+    }
   
     &__logo {
       display: block;
-      float: left;
-      margin-top: .5rem;
-      margin-left: .5rem;
       height: 2.45rem;
       -webkit-filter: invert(100%) drop-shadow( 0.5rem 0.5rem 0.3rem rgba(0, 0, 0, .7));
       filter: invert(100%) drop-shadow( 0.5rem 0.5rem 0.3rem rgba(0, 0, 0, .7)); 

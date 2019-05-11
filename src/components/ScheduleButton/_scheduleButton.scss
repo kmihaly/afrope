@@ -1,24 +1,63 @@
 .schedule-button {
-    display: inline-block;
-    
-    a {
-      color: $color-light;
-      text-align: center;
-      font-size: 1.2rem;
-      line-height: 1;
+  &,
+  &:link,
+  &:visited {
+      color: $color-black;
+      background-color: $color-light-blue;
+      text-transform: uppercase;
       text-decoration: none;
-      padding: .875rem;
-      border: $color-light-blue solid 0.25rem;
-      background-color: #333;
-  
-      &:active {
-        background-color: #4CAF50;
-        color: $color-white;
-      }
-  
-      &:hover {
-        background-color: $color-light;
-        color: $color-black;
-      }
+      font-family: goudy;
+      font-weight: 1000;
+      letter-spacing: .1rem;
+      padding: .3rem .7rem;
+      display: inline-block;
+      border-radius: 10rem;
+      transition: all .2s;
+      position: relative;
+      font-size: 1.2rem;
+      border: none;
+      cursor: pointer;
+
+      &::after {
+        background-color: $color-light-blue;
     }
   }
+  
+  &-hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba($color-black,.6);
+
+      &::after {
+          transform: scaleX(1.4) scaleY(1.6);
+          opacity: 0;
+      }
+  }
+  
+  &:active,
+  &:focus {
+      outline: none;
+      transform: translateY(-1px);
+      box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+  }
+  
+  &::after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 10rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all .2s;
+  }
+  
+  &--animated {
+      animation: growButton .5s ease-out ;
+      animation-fill-mode: backwards;
+  }
+}
+
+
+  

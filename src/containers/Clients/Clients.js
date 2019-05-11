@@ -81,10 +81,10 @@ class Clients extends Component {
 
         return (
             <>
-                <div className="clients-section">
+                <div className="clients-section" id="clients">
                     <SectionTitle text="Clients" />
                     <div className="clients-text">
-                        <span className="clients-text__font">Check out what our clients think of our work.</span>
+                        <span className="clients-text__font">Check out what our clients think of our work</span>
                     </div>
                     <div className="clients-carousel">
                         <Carousel
