@@ -5,7 +5,6 @@ import {
     CarouselItem,
     CarouselControl,
     CarouselIndicators,
-    CarouselCaption
 } from 'reactstrap'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -15,19 +14,19 @@ const items = [
         text:'Spriti introduced new capabilities of the FirstSpriti Digital Experience Platform. Helping marketers serve unmatched cross-phase personalized experiences at every step of the FirstSpriti Digital Experience Platform powers enterprise-class. Helping marketers serve unmatched cross-phase personalized experiences at every step of the FirstSpriti Digital Experience Platform powers enterprise-class.',
         name: 'Johnny Bravo, half-god',
         altText: 'Slide 1',
-        caption: 'Slide 1'
+        key: 'Slide 1'
     },
     {
         text: 'It is pushing the envelope At the end of the FirstSpriti Digital Experience Platform powers enterprise-class. Clicking on this link which refers to B2B Marketing awards shortlist will take you to the awards page of the FirstSpriti Digital Experience Platform. ' ,
         name: 'Katherine Pluto, hunter',
         altText: 'Slide 2',
-        caption: 'Slide 2'
+        key: 'Slide 2'
     },
     {
         text: 'It is pushing the envelope At the end of the FirstSpriti Digital Experience Platform powers enterprise-class. Spriti introduced new capabilities to the awards page of the FirstSpriti Digital Experience Platform. Spriti introduced new capabilities of the FirstSpriti Digital Experience Platform powers enterprise-class. It is pushing the envelope At the end of the customer journey. Clicking on this link which refers to B2B Marketing awards shortlist will take you to the awards page of the customer journey. Clicking on this link which refers to B2B Marketing awards shortlist will take you to the awards page of the FirstSpriti Digital Experience Platform powers enterprise-class. Clicking on this link which refers to B2B Marketing awards shortlist will take you to the awards page of the customer journey.',
         name: 'SimOne Echo',
         altText: 'Slide 3',
-        caption: 'Slide 3'
+        key: 'Slide 3'
     }
 ];
 
@@ -69,7 +68,7 @@ class Clients extends Component {
                 <CarouselItem
                     onExiting={this.onExiting}
                     onExited={this.onExited}
-                    key={item.src}
+                    key={item.key}
                 >
                     <div 
                         alt={item.altText} 
