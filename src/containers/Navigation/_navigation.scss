@@ -8,6 +8,7 @@
     height: auto;
     background-color: $color-dark;
     font-family: goudy;
+    font-size: 1.2rem;
     top: 0;
     width: 100%;
     z-index: 10000;
@@ -23,7 +24,7 @@
       filter: invert(100%) drop-shadow( 0.5rem 0.5rem 0.3rem rgba(0, 0, 0, .7)); 
     }
   
-    &-items {
+    .nav-item {
       position: relative;
       text-align: right;
   
@@ -32,18 +33,18 @@
         color: $color-light;
         text-align: center;
         font-size: 1.2rem;
-        padding: 0.875rem;
+        border-radius: .5rem;
         line-height: 1;
         text-decoration: none;
   
-        &:active {
+        /*&:active {
           background-color: #4CAF50;
           color: $color-white;
-        }
+        }*/
   
         &:hover {
-          background-color: #ddd;
-          color: $color-black;
+          background-color: $color-very-dark !important;
+          color: $color-white !important;
         }
       }
     }
