@@ -17,13 +17,13 @@ const items = [
         key: 'Slide 1'
     },
     {
-        text: 'It is pushing the envelope At the end of the FirstSpriti Digital Experience Platform powers enterprise-class. Clicking on this link which refers to B2B Marketing awards shortlist will take you to the awards page of the FirstSpriti Digital Experience Platform. ' ,
+        text: 'It is pushing the envelope At the end of the FirstSpriti Digital Experience Platform powers enterprise-class. Clicking on this link which refers to B2B Marketing awards shortlist will take you to the awards page of the FirstSpriti Digital Experience Platform.' ,
         name: 'Katherine Pluto, hunter',
         altText: 'Slide 2',
         key: 'Slide 2'
     },
     {
-        text: 'It is pushing the envelope At the end of the FirstSpriti Digital Experience Platform powers enterprise-class. Spriti introduced new capabilities to the awards page of the FirstSpriti Digital Experience Platform. Spriti introduced new capabilities of the FirstSpriti Digital Experience Platform powers enterprise-class. It is pushing the envelope At the end of the customer journey. Clicking on this link which refers to B2B Marketing awards shortlist will take you to the awards page of the customer journey. Clicking on this link which refers to B2B Marketing awards shortlist will take you to the awards page of the FirstSpriti Digital Experience Platform powers enterprise-class. Clicking on this link which refers to B2B Marketing awards shortlist will take you to the awards page of the customer journey.',
+        text: 'It is pushing the envelope At the end of the FirstSpriti Digital Experience Platform powers enterprise-class. Spriti introduced new capabilities to the awards page of the FirstSpriti Digital Experience Platform. Spriti introduced new capabilities of the FirstSpriti Digital Experience Platform powers enterprise-class. It is pushing the envelope At the end of the customer journey. Clicking on this link which refers to B2B Marketing awards shortlist will take you to the awards page of the customer journey.',
         name: 'SimOne Echo',
         altText: 'Slide 3',
         key: 'Slide 3'

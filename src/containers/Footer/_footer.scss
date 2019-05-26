@@ -1,7 +1,7 @@
 .footer-section {
     position: relative;
     background-color: $color-dark;
-    padding: 4rem 8rem 4rem 8rem;
+    padding: 4rem 8rem 0rem 8rem;
     font-size: 1rem;
     font-family: goudy;
     color: $color-light;
@@ -12,19 +12,21 @@
     }
 
     &__logo-box {
-        justify-content: center;
         display: flex;
+        justify-content: center;
+        margin: auto;
         align-items: center;
     }
 
     &__navigation {
         display: flex;
-        align-items: center;
+        justify-content: space-around;
+        //align-items: center;
         padding-left: 2rem;
-    }
 
-    &__list {
-        list-style: none;
+        a {
+            display: block;
+        }
     }
 
     &__link {
@@ -49,5 +51,6 @@
     &__copyright-box {
         display: flex;
         align-items: center;
+        text-align: justify;
     }
 }

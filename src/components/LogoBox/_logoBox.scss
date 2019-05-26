@@ -4,7 +4,8 @@
     -webkit-align-items: center; /* Safari 7.0+ */
     display: flex;
     align-items: center;
-    padding: 2rem;
+    width: 100%;
+    padding: 2rem 2rem 1rem 2rem;
 
     &__line {
         width: 100%;

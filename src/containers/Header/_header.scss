@@ -17,7 +17,7 @@
   
     .heading {
       position: absolute;
-      top: 40%;
+      top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
@@ -26,9 +26,9 @@
     
       &__primary {
         font-size: 2.5rem;
-        font-weight: 700;
+        font-weight: 1200;
         font-family: goudyBold;
-        letter-spacing: .4rem;
+        letter-spacing: .7rem;
       }
   
       &__secondary {
