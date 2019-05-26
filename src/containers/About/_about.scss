@@ -35,22 +35,27 @@
   
         &-1 {
           @include picture;
-          background-image: url(./images/tiles/tile1.jpg);
+          background-image: url(./images/about/whatWeDo.jpg);
         }
   
         &-2 {
           @include picture;
-          background-image: url(./images/tiles/tile2.jpg);
+          background-image: url(./images/about/difference.jpg);
         }
   
         &-3 {
           @include picture;
-          background-image: url(./images/tiles/tile3.jpg);
+          background-image: url(./images/about/aboutUs.jpg);
         }
   
         &-4 {
           @include picture;
-          background-image: url(./images/tiles/tile4.jpg)
+          background-image: url(./images/about/philosophy.jpg)
+        }
+
+        &-5 {
+          @include picture;
+          background-image: url(./images/about/missionAndVision.jpg)
         }
       }
     }

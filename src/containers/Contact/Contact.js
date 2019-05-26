@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 //import video from '../../video/171003A_012_2K.mp4';
-import video from '../../video/171003A_003_2K.mp4';
+import video from '../../video/171003A_003_2K_c500k.mp4';
 import ScheduleButton from '../../components/ScheduleButton/ScheduleButton';
 
 class Contact extends Component {
@@ -26,7 +26,7 @@ class Contact extends Component {
                         <ul>
                             <li><p><ScheduleButton /> with us (totally free, no hidden costs)</p></li>
                             <li><p>Write an email: <a href="mailto:molnarzseee@gmail.com">consulting@afrope.org</a></p></li>
-                            <li><p>Or send a message - Our consultants will get in touch with you in 24 hours.</p></li>
+                            <li><p>Or send a message - Our consultants will get in touch with you within 24 hours.</p></li>
                         </ul>
                     </div>
                     <div className="contact-section__form">

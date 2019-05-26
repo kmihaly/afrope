@@ -26,9 +26,9 @@ class Navigation extends Component {
     render() {
         return (
             <Navbar color="$color-dark" dark expand="md" className="navbar">
-            <NavbarBrand>
-                <Logo className="navbar__logo" color="white"/>
-            </NavbarBrand>               
+                <NavbarBrand>
+                    <Logo className="navbar__logo" color="white" />
+                </NavbarBrand>
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>
@@ -50,11 +50,13 @@ class Navigation extends Component {
                         <NavItem>
                             <NavLink href="#contact">Contact</NavLink>
                         </NavItem>
+                        <NavItem>
+                            <ScheduleButton />
+                        </NavItem>
                     </Nav>
                 </Collapse>
-                <ScheduleButton />
             </Navbar>
-        );        
+        );
     }
 }
 

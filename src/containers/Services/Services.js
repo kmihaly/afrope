@@ -61,34 +61,19 @@ class Services extends Component {
 					<div className="graybox__packages">
 						<div className="row">
 							<div className="col-1-3">
-								<Package pictureClass="package-bestcountry" sizeClasses="picture-tall" caption="the best country"/>
+								<Package pictureClass="package-bestcountry" sizeClasses="picture-normal" caption="the best country"/>
+								<Package pictureClass="package-university" sizeClasses="picture-normal" caption="the best matching universities"/>
+								<Package pictureClass="package-masterprogramme" sizeClasses="picture-normal" caption="the best matching master programme"/>
 							</div>
-							<div className="col-2-3">
-								<div className="row">
-									<div className="col-1-2">
-										<Package pictureClass="package-university" sizeClasses="picture-normal" caption="the best matching universities"/>
-									</div>
-									<div className="col-1-2">
-										<Package pictureClass="package-masterprogramme" sizeClasses="picture-normal" caption="the best matching master programme"/>
-									</div>
-								</div>
-								<div className="row">
-									<Package pictureClass="package-appguide" sizeClasses="picture-wide" caption="step by step application guide"/>	
-								</div>					
-							</div>
-						</div>
-						<div className="row">
-							<Package pictureClass="package-information" sizeClasses="picture-normal" caption="travel and visa information"/>
-						</div>
-						<div className="row">
 							<div className="col-1-3">
+								<Package pictureClass="package-appguide" sizeClasses="picture-normal" caption="step by step application guide"/>	
+								<Package pictureClass="package-information" sizeClasses="picture-normal" caption="travel and visa information"/>
 								<Package pictureClass="package-scholarships" sizeClasses="picture-normal" caption="scholarships and application guide"/>
 							</div>
 							<div className="col-1-3">
 								<Package pictureClass="package-culture" sizeClasses="picture-normal" caption="culture"/>
-							</div>
-							<div className="col-1-3">
 								<Package pictureClass="package-accommodation" sizeClasses="picture-normal" caption="accommodation"/>
+								<Package pictureClass="package-friends" sizeClasses="picture-normal" caption="friends"/>
 							</div>
 						</div>
 					</div>

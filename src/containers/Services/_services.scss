@@ -93,35 +93,39 @@
           display: block;
     
           &-bestcountry {
-            background-image: url(../src/images/package-images/package5.jpg);
+            background-image: url(../src/images/package-images/bestCountry.jpg);
             @include bg-image-props;
           }
           &-university {
-            background-image: url(../src/images/package-images/package2.jpg);
+            background-image: url(../src/images/package-images/university.jpg);
             @include bg-image-props;
           }
           &-masterprogramme {
-            background-image: url(../src/images/package-images/package3.jpg);
+            background-image: url(../src/images/package-images/master.jpg);
             @include bg-image-props;
           }
           &-appguide {
-            background-image: url(../src/images/package-images/package4.jpg);
+            background-image: url(../src/images/package-images/appguide.jpg);
             @include bg-image-props;
           }
           &-accommodation {
-            background-image: url(../src/images/package-images/package1.jpg);
+            background-image: url(../src/images/package-images/accomodation.jpg);
             @include bg-image-props;
           }
           &-scholarships {
-            background-image: url(../src/images/package-images/package7.jpg);
+            background-image: url(../src/images/package-images/scholarship.jpg);
             @include bg-image-props;
           }
           &-information {
-            background-image: url(../src/images/package-images/package8.jpg);
+            background-image: url(../src/images/package-images/travelInfo.jpg);
             @include bg-image-props;
           }
           &-culture {
-            background-image: url(../src/images/package-images/package9.jpg);
+            background-image: url(../src/images/package-images/culture.jpg);
+            @include bg-image-props;
+          }
+          &-friends {
+            background-image: url(../src/images/package-images/friends.jpg);
             @include bg-image-props;
           }
     
