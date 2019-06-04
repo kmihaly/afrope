@@ -37,12 +37,7 @@
           width: 50%;
           height: 300px;
           background-size: cover;
-          display: table-cell;
-
-          @include respond(tab-port) {
-            display: block;
-            width: 100%;
-          }
+          display: table-cell;          
         }
   
         &-1 {
