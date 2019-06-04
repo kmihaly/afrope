@@ -24,10 +24,10 @@ class ScheduleButton extends Component {
     render() {
         return (
             <a 
-                href="#section" 
                 className={"schedule-button schedule-button--animated " + this.state.animationClass}
                 onMouseEnter={this.startScale}
                 onMouseLeave={this.endScale}
+                href="mailto:consulting@afrope.org"
             >
                 SCHEDULE A CALL
             </a>

@@ -12,3 +12,32 @@
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
 }
+
+@mixin side-padding {
+
+    @media (max-width: 1200px) {
+        padding: 2rem 4rem 2rem 4rem !important;
+    }
+
+    @media (max-width: 900px) {
+        padding: 1rem 2rem 1rem 2rem !important;
+    }
+
+    @media (max-width: 600px) {
+        padding: 1rem 1rem 1rem 1rem !important;    
+    }
+        
+    /*
+    @media (min-width: 1800px) {
+        padding: 4rem 8rem 4rem 8rem;
+    }
+    */
+}
+
+
+/*
+-600down: 0rem;
+$side-padding-900down: 2rem;
+$side-padding-1200down: 4rem;
+$side-padding-1200up: 8rem;
+*/

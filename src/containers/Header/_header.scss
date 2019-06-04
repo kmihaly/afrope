@@ -1,7 +1,5 @@
 .cover {
   position: absolute;
- // top: 3.45rem;
-  //height: calc(100% - 3.45rem);
   height: 100%;
   width: 100%;
   background-image: url(./images/cover/cover.jpg);
@@ -29,6 +27,12 @@
         font-weight: 1200;
         font-family: goudyBold;
         letter-spacing: .7rem;
+        text-transform: uppercase;
+
+        @include respond(tab-land) { font-size: 2.2rem; }
+        @include respond(tab-port) { font-size: 1.8rem; }
+        @include respond(phone) { font-size: 1.5rem; }
+        @include respond(big-desktop) { font-size: 3rem; }
       }
   
       &__secondary {
@@ -37,6 +41,11 @@
         text-transform: uppercase;
         font-family: goudyBold;
         letter-spacing: .1rem;
+
+        @include respond(tab-land) { font-size: 1.5rem; }
+        @include respond(tab-port) { font-size: 1.3rem; }
+        @include respond(phone) { font-size: 1.1rem; }
+        @include respond(big-desktop) { font-size: 1.8rem; }
       }
     }
   

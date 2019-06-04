@@ -14,8 +14,8 @@ class LogoBox extends Component {
                         color={color} 
                         style={{
                             width: logoWidthPercent + "%",
-                            minWidth: "70px",
-                            maxWidth: "100px" 
+                            minWidth: "40px",
+                            maxWidth: "120px" 
                         }}
                     />
                 <div className={color + "__line"}></div>

@@ -2,6 +2,8 @@
     position: relative;
     background-color: $color-dark;
     padding: 4rem 8rem 4rem 8rem;
+
+    @include side-padding;
   
     .about-item {
       width: 100%;
@@ -22,6 +24,11 @@
         display: table-cell; 
         vertical-align: middle; 
         text-align: center;
+
+        @include respond(tab-port) {
+          display: block;
+          height: auto;
+        }
       }
   
       &__picture {
@@ -31,6 +38,11 @@
           height: 300px;
           background-size: cover;
           display: table-cell;
+
+          @include respond(tab-port) {
+            display: block;
+            width: 100%;
+          }
         }
   
         &-1 {
