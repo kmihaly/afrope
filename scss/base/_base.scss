@@ -16,17 +16,4 @@ body, #root {
 html {
     // This defines what 1rem is
     font-size: 100%; //1 rem = 16px;
-
-    @include respond(tab-land) { // width < 1200?
-        font-size: 85%; // 9px
-    }
-
-    @include respond(tab-port) { // width < 900?
-        font-size: 75%; //8px
-    }
-    /*
-    @include respond(big-desktop) {
-        font-size: 75%; //1rem = 12, 12/16
-    }
-    */
 }

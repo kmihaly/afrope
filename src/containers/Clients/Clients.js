@@ -11,22 +11,28 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 const items = [
     {
-        text:'Spriti introduced new capabilities of the FirstSpriti Digital Experience Platform. Helping marketers serve unmatched cross-phase personalized experiences at every step of the FirstSpriti Digital Experience Platform powers enterprise-class. Helping marketers serve unmatched cross-phase personalized experiences at every step of the FirstSpriti Digital Experience Platform powers enterprise-class.',
-        name: 'Johnny Bravo, half-god',
+        text:'I really like what I got. It is a very professional document. Brilliant.',
+        name: 'Peter',
         altText: 'Slide 1',
         key: 'Slide 1'
     },
     {
-        text: 'It is pushing the envelope At the end of the FirstSpriti Digital Experience Platform powers enterprise-class. Clicking on this link which refers to B2B Marketing awards shortlist will take you to the awards page of the FirstSpriti Digital Experience Platform.' ,
-        name: 'Katherine Pluto, hunter',
+        text: 'Just a quick note to thank you for the great work you were doing! You are on top of everything and it was really great working with you!' ,
+        name: 'Andres',
         altText: 'Slide 2',
         key: 'Slide 2'
     },
     {
-        text: 'It is pushing the envelope At the end of the FirstSpriti Digital Experience Platform powers enterprise-class. Spriti introduced new capabilities to the awards page of the FirstSpriti Digital Experience Platform. Spriti introduced new capabilities of the FirstSpriti Digital Experience Platform powers enterprise-class. It is pushing the envelope At the end of the customer journey. Clicking on this link which refers to B2B Marketing awards shortlist will take you to the awards page of the customer journey.',
-        name: 'SimOne Echo',
+        text: 'Thank you again for your tremendous professionalism, energy and dedication! It was a delight to work with you and we look forward to staying in touch!',
+        name: 'Jane',
         altText: 'Slide 3',
         key: 'Slide 3'
+    },
+    {
+        text: 'I am glad that I decided to work with you. I am grateful that you guided me through this stressful time. It really felt like you understood me from the very beginning.',
+        name: 'Roland',
+        altText: 'Slide 4',
+        key: 'Slide 4'
     }
 ];
 
@@ -90,15 +96,12 @@ class Clients extends Component {
                     </div>
                     <div className="clients-carousel">
                         <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
-                        <Carousel
-                            activeIndex={activeIndex}
-                            next={this.next}
-                            previous={this.previous}
-                        >
-                            <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
+                        <Carousel activeIndex={activeIndex} next={this.next} previous={this.previous} >
+                            
                             {slides}    
                         </Carousel>
                         <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
+                        <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
                     </div>
                 </div>
             </>

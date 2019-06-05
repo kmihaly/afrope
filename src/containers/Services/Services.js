@@ -32,20 +32,21 @@ class Services extends Component {
 					onMouseEnter={this.reduceOverlayTop}
 					onMouseLeave={this.increaseOverlayTop}
 				>
-					<span className="services-card__caption" style={{display: this.state.isProcessCaptionVisible}}>
-					OUR PROCESS
+					<span className="services-card__caption" style={{ display: this.state.isProcessCaptionVisible }}>
+						OUR PROCESS
 					</span>
 					<div className="services-card__overlay" style={{ top: this.state.top }}>
 						<span className="services-card__overlay-text">
-						OUR PROCESS IS POWERFUL<br />
-						1. We analyze your need and desire<br />
-						2. We figure out the best course of action to
+							OUR PROCESS IS POWERFUL<br />
+							1. We analyze your need and desire<br />
+							2. We figure out the best course of action to
 						take<br />
-						3. We provide expert advice<br />
-							
+							3. We provide expert advice<br />
+
 						</span>
 					</div>
 				</div>
+				<div className="break-section"></div>
 				<SectionTitle text="Services" />
 				<div className="graybox">
 					<div className="graybox__description graybox__description--2columns">
@@ -61,33 +62,30 @@ class Services extends Component {
 					<div className="graybox__packages">
 						<div className="row">
 							<div className="col-1-3">
-								<Package pictureClass="package-bestcountry" sizeClasses="picture-normal" caption="the best country"/>
-								<Package pictureClass="package-university" sizeClasses="picture-normal" caption="the best matching universities"/>
-								<Package pictureClass="package-masterprogramme" sizeClasses="picture-normal" caption="the best matching master programme"/>
+								<Package pictureClass="package-university" sizeClasses="picture-normal" caption="The Best Match University" />
+								<Package pictureClass="package-masterprogramme" sizeClasses="picture-normal" caption="The Best Matching Master Programme" />
 							</div>
 							<div className="col-1-3">
-								<Package pictureClass="package-appguide" sizeClasses="picture-normal" caption="step by step application guide"/>	
-								<Package pictureClass="package-information" sizeClasses="picture-normal" caption="travel and visa information"/>
-								<Package pictureClass="package-scholarships" sizeClasses="picture-normal" caption="scholarships and application guide"/>
+								<Package pictureClass="package-appguide" sizeClasses="picture-normal" caption="Application Guide" />
+								<Package pictureClass="package-scholarships" sizeClasses="picture-normal" caption="Scholarships" />
 							</div>
 							<div className="col-1-3">
-								<Package pictureClass="package-culture" sizeClasses="picture-normal" caption="culture"/>
-								<Package pictureClass="package-accommodation" sizeClasses="picture-normal" caption="accommodation"/>
-								<Package pictureClass="package-friends" sizeClasses="picture-normal" caption="friends"/>
+								<Package pictureClass="package-travel" sizeClasses="picture-normal" caption="Travel and Visa Arrangement" />
+								<Package pictureClass="package-countryguide" sizeClasses="picture-normal" caption="Country Guide" />
 							</div>
 						</div>
 					</div>
 					<div className="graybox__description">
-					<p>If you are hesitating get in touch with us to discuss what could be the
-						best for you. It is normal to feel stressed because you are before a huge
-						change in your life! The decision that you make now will determine your
-						entire future!</p>
-					<p>Do you have questions? Schedule a call now to see if we can help you.
-						The call is totally free, there are no hidden costs. This is our appreciation
-						for your interest.</p>
-					<div className="graybox__schedule">
-						<ScheduleButton />
-					</div>
+						<p>If you are hesitating get in touch with us to discuss what could be the
+							best for you. It is normal to feel stressed because you are before a huge
+							change in your life! The decision that you make now will determine your
+							entire future!</p>
+						<p>Do you have questions? Schedule a call now to see if we can help you.
+							The call is totally free, there are no hidden costs. This is our appreciation
+							for your interest.</p>
+						<div className="graybox__schedule">
+							<ScheduleButton />
+						</div>
 					</div>
 				</div>
 				<div className="break-section">

@@ -2,13 +2,17 @@
     position: relative;
     background-color: $color-dark;
     padding: 0 8rem 0 8rem;
+
+    @include side-padding;
   
     .services-card {
       position: relative;
       height: 300px;
       width: 100%;
+      max-width: 1600px;
+      margin: auto;
       overflow: hidden;
-      background-image: url(./images/cards/students.jpg);
+      background-image: url(./images/process/large-group-standing-in-office.jpg);
       background-size: cover;
       background-position: center; 
 
@@ -16,15 +20,23 @@
         position: absolute;
         z-index: +10;
         left: 50%;
-        top: 50%;
+        top: 30%;
         transform: translate(-50%, -50%);
-        font-weight: bold;
-        font-size: 2rem;
-        color: $color-white;
-        text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.9); 
+        font-weight: 500;
+        font-size: 2.2rem;
+        letter-spacing: 0.1rem;
+        color: $color-black;
+        text-shadow: 0.1rem 0.1rem rgba(255, 255, 255, 0.9); 
+        text-transform: uppercase;
+
+        @include respond(tab-land) { font-size: 2rem; }
+        @include respond(tab-port) { font-size: 1.6rem; }
+        @include respond(phone) { font-size: 1.3rem; }
+        @include respond(big-desktop) { font-size: 2.5rem; }
       }
   
       &__overlay {
+        letter-spacing: 0.1rem;
         position: absolute;
         background-color: $color-dark-opaque;
         height: 300px;
@@ -41,16 +53,30 @@
           font-weight: bold;
           font-size: 1.7rem;
           color: $color-white;
+
+          @include respond(tab-land) { font-size: 1.5rem; }
+          @include respond(tab-port) { font-size: 1.3rem; }
+          @include respond(phone) { font-size: 1.2rem; }
+          @include respond(big-desktop) { font-size: 1.8rem; }
         }
       }
     }
   
     .graybox {
       background-color: $color-dark;
+      max-width: 1600px;
+      margin: auto;
     
       &__description {
-        padding: 4rem;
+        padding: 2rem 4rem 4rem 4rem;
         background-color: $color-light;
+        font-size: 1rem;
+        @include respond(tab-land) { font-size: 1rem; }
+        @include respond(tab-port) { font-size: .9rem; }
+        @include respond(phone) { font-size: .8rem; }
+        @include respond(big-desktop) { font-size: 1.3rem; }
+
+        @include side-padding;
 
         &--2columns {
           column-count: 2;
@@ -58,13 +84,21 @@
           column-rule-style: solid;
           column-rule-width: .15rem;
           column-rule-color: $color-dark-opaque;
+
+          @include respond(tab-land) { 
+            column-count: 1;
+          }
         }
       }
     
       &__packages {
         padding: 0 4rem 0 4rem;
         background-color: $color-light;
-        
+        @include respond(tab-land) { padding: 0 4rem 0 4rem; }
+        @include respond(tab-port) { padding: 0 2rem 0 2rem; }
+        @include respond(phone) { padding: 0 0 0 0; }
+        @include respond(big-desktop) { padding: 0 4rem 0 4rem; }
+                
         .picture-normal {
           height: 250px;
         }
@@ -92,40 +126,33 @@
           position: relative;
           display: block;
     
-          &-bestcountry {
-            background-image: url(../src/images/package-images/bestCountry.jpg);
-            @include bg-image-props;
-          }
           &-university {
-            background-image: url(../src/images/package-images/university.jpg);
+            background-image: url(../src/images/package-images/P1.jpg);
             @include bg-image-props;
           }
+
           &-masterprogramme {
-            background-image: url(../src/images/package-images/master.jpg);
+            background-image: url(../src/images/package-images/P2.jpg);
             @include bg-image-props;
           }
+
           &-appguide {
-            background-image: url(../src/images/package-images/appguide.jpg);
+            background-image: url(../src/images/package-images/P3.jpg);
             @include bg-image-props;
           }
-          &-accommodation {
-            background-image: url(../src/images/package-images/accomodation.jpg);
-            @include bg-image-props;
-          }
+
           &-scholarships {
-            background-image: url(../src/images/package-images/scholarship.jpg);
+            background-image: url(../src/images/package-images/P4.jpg);
             @include bg-image-props;
           }
-          &-information {
-            background-image: url(../src/images/package-images/travelInfo.jpg);
+
+          &-travel {
+            background-image: url(../src/images/package-images/P5.jpg);
             @include bg-image-props;
           }
-          &-culture {
-            background-image: url(../src/images/package-images/culture.jpg);
-            @include bg-image-props;
-          }
-          &-friends {
-            background-image: url(../src/images/package-images/friends.jpg);
+          
+          &-countryguide {
+            background-image: url(../src/images/package-images/P6.jpg);
             @include bg-image-props;
           }
     

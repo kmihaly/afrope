@@ -5,6 +5,22 @@
     font-size: 1rem;
     padding: 4rem 8rem 4rem 8rem;
 
+    @include side-padding;
+
+    .bg-image {
+        background-image: url(./images/contact/contact_bgr.jpg);
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        //overflow: hidden;
+        filter: brightness(30%);
+    }
+
+    /*
     .bg-video {
         position: absolute;
         top: 0;
@@ -33,13 +49,20 @@
             margin-right: 1rem;
         }
     }
+    */
+
+    &__box {
+        max-width: 1600px;
+        margin: auto;
+    }
 
     &__title {
         font-size: 2.2rem;
-        font-family: goudyBold;
+        //font-family: goudyBold;
         letter-spacing: 0.1rem;
         margin: 0;
         padding-bottom: 2rem;
+        text-transform: uppercase;
     }
 
     &__options {
@@ -52,10 +75,32 @@
         }
     }
 
+    .toast {
+        width: 50%;
+        @include respond(tab-port) {
+            width: 75%;
+        }
+        @include respond(phone) {
+            width: 100%;
+        }
+
+        &-body {
+            color: $color-dark;
+        }
+    }
+
     &__form {
         border: .15rem solid $color-white;
         padding: 4rem;
         width: 50%;
+        color: $color-dark;
+
+        @include respond(tab-port) {
+            width: 75%;
+        }
+        @include respond(phone) {
+            width: 100%;
+        }
     }
 
 }
