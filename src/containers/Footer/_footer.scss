@@ -1,10 +1,12 @@
 .footer-section {
     position: relative;
     background-color: $color-dark;
-    padding: 4rem 8rem 0rem 8rem;
     font-size: 1rem;
-    font-family: goudy;
+    //font-family: goudy;
     color: $color-light;
+    padding: 4rem 8rem 0rem 8rem;
+
+    @include side-padding;
 
     &__row {
         border-top: 1px solid $color-light-blue;
@@ -23,6 +25,13 @@
         justify-content: space-around;
         //align-items: center;
         padding-left: 2rem;
+
+        @include respond(tab-port) { 
+            padding-left: 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
         a {
             display: block;

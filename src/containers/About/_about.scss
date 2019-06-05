@@ -62,27 +62,32 @@
   
         &-1 {
           @include picture;
-          background-image: url(./images/about/whatWeDo.jpg);
+          background-image: url(./images/about/whatWeDo_opt.jpg);
         }
   
         &-2 {
           @include picture;
-          background-image: url(./images/about/difference.jpg);
+          background-image: url(./images/about/difference_opt.jpg);
         }
   
         &-3 {
           @include picture;
-          background-image: url(./images/about/aboutUs.jpg);
+          background-image: url(./images/about/aboutUs_opt.jpg);
         }
   
         &-4 {
           @include picture;
-          background-image: url(./images/about/philosophy.jpg)
+          background-image: url(./images/about/philosophy_opt.jpg)
         }
 
         &-5 {
           @include picture;
-          background-image: url(./images/about/missionAndVision.jpg)
+          background-image: url(./images/about/missionAndVision_opt.jpg)
+        }
+
+        &-6 {
+          @include picture;
+          background-image: url(./images/about/whoIsItFor_opt.jpg)
         }
       }
     }

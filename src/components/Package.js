@@ -6,7 +6,7 @@ class Package extends Component {
         transform_scale: 1,
         blur: 0,
         brightness: 100,
-        opacity: 0
+        opacity: .5
     }
     
     showCaption = () => {
@@ -14,7 +14,7 @@ class Package extends Component {
             transform_scale: 1.2,
             blur: 5,
             brightness: 60,
-            opacity: 100
+            opacity: 1
         })
     }
     
@@ -23,7 +23,7 @@ class Package extends Component {
             transform_scale: 1,
             blur: 0,
             brightness: 100,
-            opacity: 0
+            opacity: .5
         })
     }
 

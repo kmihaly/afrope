@@ -1,5 +1,6 @@
 {
   "name": "afrope",
+  "author": "Zsuzsa Molnar",
   "version": "0.1.0",
   "private": true,
   "homepage": "http://www.afrope.org/",
@@ -17,8 +18,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "compile:sass": "node-sass src/App.scss src/App.css -w"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"

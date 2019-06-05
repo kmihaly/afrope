@@ -20,7 +20,7 @@
         position: absolute;
         z-index: +10;
         left: 50%;
-        top: 30%;
+        top: 35%;
         transform: translate(-50%, -50%);
         font-weight: 500;
         font-size: 2.2rem;
@@ -115,6 +115,7 @@
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center;
+          backface-visibility: hidden;
           transition: all 500ms ease-out 0s;
           width: 100%;
           height: 100%;
@@ -127,32 +128,32 @@
           display: block;
     
           &-university {
-            background-image: url(../src/images/package-images/P1.jpg);
+            background-image: url(../src/images/package-images/P1_opt.jpg);
             @include bg-image-props;
           }
 
           &-masterprogramme {
-            background-image: url(../src/images/package-images/P2.jpg);
+            background-image: url(../src/images/package-images/P2_opt.jpg);
             @include bg-image-props;
           }
 
           &-appguide {
-            background-image: url(../src/images/package-images/P3.jpg);
+            background-image: url(../src/images/package-images/P3_opt.jpg);
             @include bg-image-props;
           }
 
           &-scholarships {
-            background-image: url(../src/images/package-images/P4.jpg);
+            background-image: url(../src/images/package-images/P4_opt.jpg);
             @include bg-image-props;
           }
 
           &-travel {
-            background-image: url(../src/images/package-images/P5.jpg);
+            background-image: url(../src/images/package-images/P5_opt.jpg);
             @include bg-image-props;
           }
           
           &-countryguide {
-            background-image: url(../src/images/package-images/P6.jpg);
+            background-image: url(../src/images/package-images/P6_opt.jpg);
             @include bg-image-props;
           }
     
@@ -160,7 +161,7 @@
             text-transform: capitalize;
             color: $color-white;
             text-align: center;
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: bold;
             position: absolute;
             left: 50%;

@@ -9,7 +9,7 @@ class Transition extends Component {
                     We help you to make your career dreams become a reality by making your studies far reaching and broad. <br />
                     Do not let your learning restrict you!<br /><br />
                     
-                    We are a team of true experts, laser focused on helping engineering and business students in Africa achieve their academic and career goals. We design a tailor made information package necessary for securing their studies in Europe.
+                    We are a team of true experts, laser focused on helping engineering and business students in Africa achieve their academic goals. We design a tailor made strategic guide necessary for securing your studies in Europe.
                     </span>
                 </div>
             </div>

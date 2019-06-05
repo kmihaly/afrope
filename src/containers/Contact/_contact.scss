@@ -8,15 +8,15 @@
     @include side-padding;
 
     .bg-image {
-        background-image: url(./images/contact/contact_bgr.jpg);
+        background-image: url(./images/contact/contact_bgr_opt.jpg);
         background-size: cover;
+        background-position: center 25%;
         position: absolute;
         top: 0;
         left: 0;
         height: 100%;
         width: 100%;
         z-index: -1;
-        //overflow: hidden;
         filter: brightness(30%);
     }
 

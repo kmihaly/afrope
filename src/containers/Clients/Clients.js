@@ -96,7 +96,7 @@ class Clients extends Component {
                     </div>
                     <div className="clients-carousel">
                         <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
-                        <Carousel activeIndex={activeIndex} next={this.next} previous={this.previous} >
+                        <Carousel activeIndex={activeIndex} next={this.next} previous={this.previous} ride="carousel" interval="6500">
                             
                             {slides}    
                         </Carousel>

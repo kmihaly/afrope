@@ -20,7 +20,7 @@ class Footer extends Component {
                     <div className="footer-section__copyright-box">
                         <p>
                             Built by <a href="mailto:kaloczy.mihaly@gmail.com" className="footer-section__link">Mihaly Kaloczy</a>.
-                            Copyright &copy; by <a href="mailto:consulting@afrope.org" className="footer-section__link">Zsuzsa Molnar</a>. You are not allowed to use any part of this webpage for neither personal nor commercial use, especially to claim the logo as yours. A credit to the author, Mihaly Kaloczy, is of course highly appreciated. A big thanks to Jonas Schmedtmann for his online courses.
+                            Copyright &copy; by <a href="mailto:consulting@afrope.org" className="footer-section__link">Zsuzsa Molnar</a>. You are not allowed to use any part of this webpage for neither personal nor commercial use, especially to claim the brand AfRope or the logo as yours. A credit to the author, Mihaly Kaloczy, is of course highly appreciated. A big thanks to Jonas Schmedtmann for his online courses.
                         </p>
                     </div>
                 </div>
