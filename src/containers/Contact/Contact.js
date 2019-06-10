@@ -25,12 +25,10 @@ class Contact extends Component {
                 <div className="contact-section__box">
                     <p className="contact-section__title">Get in Touch</p>
                     <div className="contact-section__options">
-                        <ul>
-                            <li><p><ScheduleButton /> with us (totally FREE)</p></li>
-                            <li><p>Write an email: <a href="mailto:consulting@afrope.org">consulting@afrope.org</a></p></li>
-                            {/* <li><p>Or send a message - Our consultants will get in touch with you within 24 hours.</p></li> */}
-                            <li><p>In your mail, please provide with as much information as possible on your goals and vision - Our consultants will get in touch with you within 24 hours.</p></li>
-                        </ul>
+                            <p><ScheduleButton /> with us (totally FREE)</p>
+                            <p>Write an email: <a href="mailto:consulting@afrope.org">consulting@afrope.org</a></p>
+                            {/* <p>Or send a message - Our consultants will get in touch with you within 24 hours.</p> */}
+                            <p>In your mail, please provide with as much information as possible on your goals and vision - Our consultants will get in touch with you within 24 hours.</p>
                     </div>
                     {/* <Toast>
                             <ToastHeader>
