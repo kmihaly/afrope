@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import Calendar from '../Calendar/Calendar'
 
 
 
@@ -6,7 +7,8 @@ import React, { Component } from 'react';
 class ScheduleButton extends Component {
 
     state = {
-        animationClass: ""
+        animationClass: "",
+        displayCalendar: false
     }
 
     startScale = () => {
@@ -21,16 +23,26 @@ class ScheduleButton extends Component {
         })
     }
 
+    toggleCalendar = () => {
+        this.setState(prevState => ({
+            displayCalendar: !prevState.displayCalendar
+          }));
+    }
+
     render() {
         return (
-            <a 
-                className={"schedule-button schedule-button--animated " + this.state.animationClass}
-                onMouseEnter={this.startScale}
-                onMouseLeave={this.endScale}
-                href="mailto:consulting@afrope.org"
-            >
-                SCHEDULE A CALL
-            </a>
+            <>
+                <a 
+                    className={"schedule-button schedule-button--animated " + this.state.animationClass}
+                    onMouseEnter={this.startScale}
+                    onMouseLeave={this.endScale}
+                    onClick={this.toggleCalendar}
+                    href="https://fb.com/book/2094599147503954/"
+                >
+                    SCHEDULE A CALL
+                </a>
+                <Calendar display={this.state.displayCalendar} toggleForm={this.toggleCalendar}/>
+            </>
         );
     }
 }

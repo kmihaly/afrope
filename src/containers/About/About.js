@@ -18,7 +18,7 @@ class About extends Component {
                     <div className="about-item__text">
                         <b>Where can we make a difference?</b>
                         <br />
-                        Your skills and desires are in the center when we design your guide to help you reach your academic goals. There are countless factors to take into consideration when planning to studying abroad. 
+                        Your skills and desires are in the center when we design your guide to help you reach your academic goals. There are countless factors to take into consideration when planning to study abroad. 
                         <br />But good news: we know your destination better than anyone else! You receive the exclusive solution directly to your hands!
                     </div>
                     <div className="about-item__picture-2">

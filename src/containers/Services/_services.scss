@@ -66,15 +66,23 @@
       background-color: $color-dark;
       max-width: 1600px;
       margin: auto;
+
+      &__logo {
+        padding: 0rem 4rem 0rem 4rem;
+        background-color: $color-light;
+      }
     
       &__description {
-        padding: 2rem 4rem 4rem 4rem;
+        padding: 0rem 4rem 4rem 4rem;
+        padding-top: 0rem !important;
         background-color: $color-light;
-        font-size: 1rem;
-        @include respond(tab-land) { font-size: 1rem; }
-        @include respond(tab-port) { font-size: .9rem; }
-        @include respond(phone) { font-size: .8rem; }
-        @include respond(big-desktop) { font-size: 1.3rem; }
+        text-align: justify;
+        font-size: 1.5rem;
+
+        @include respond(tab-land) { font-size: 1.3rem; }
+        @include respond(tab-port) { font-size: 1.2rem; }
+        @include respond(phone) { font-size: 1rem; }
+        @include respond(big-desktop) { font-size: 1.7rem; }
 
         @include side-padding;
 
@@ -82,7 +90,7 @@
           column-count: 2;
           column-gap: 2rem;
           column-rule-style: solid;
-          column-rule-width: .15rem;
+          column-rule-width: 0rem;
           column-rule-color: $color-dark-opaque;
 
           @include respond(tab-land) { 
@@ -90,14 +98,28 @@
           }
         }
       }
+
+      &__bottom_description {
+        padding: 2rem 4rem 4rem 4rem;
+        background-color: $color-light;
+        text-align: justify;
+        font-size: 1.5rem;
+
+      @include respond(tab-land) { font-size: 1.3rem; }
+      @include respond(tab-port) { font-size: 1.2rem; }
+      @include respond(phone) { font-size: 1rem; }
+      @include respond(big-desktop) { font-size: 1.7rem; }
+
+        @include side-padding;
+      }
     
       &__packages {
-        padding: 0 4rem 0 4rem;
+        padding: 0 4rem 0rem 4rem;
         background-color: $color-light;
-        @include respond(tab-land) { padding: 0 4rem 0 4rem; }
-        @include respond(tab-port) { padding: 0 2rem 0 2rem; }
+        @include respond(tab-land) { padding: 0 4rem 2rem 4rem; }
+        @include respond(tab-port) { padding: 0 2rem 2rem 2rem; }
         @include respond(phone) { padding: 0 0 0 0; }
-        @include respond(big-desktop) { padding: 0 4rem 0 4rem; }
+        @include respond(big-desktop) { padding: 0 4rem 2rem 4rem; }
                 
         .picture-normal {
           height: 250px;

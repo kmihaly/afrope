@@ -7,6 +7,7 @@
 
 @import '../scss/layout/grid';
 
+@import '../src/components/Calendar/calendar';
 @import '../src/components/LogoBox/logoBox';
 @import '../src/components/ScheduleButton/scheduleButton';
 @import '../src/components/SectionTitle/sectionTitle';
@@ -18,4 +19,5 @@
 @import '../src/containers/Transition/transition';
 @import '../src/containers/Services/services';
 @import '../src/containers/Clients/clients';
+@import '../src/containers/Publications/publications';
 @import '../src/containers/Contact/contact';

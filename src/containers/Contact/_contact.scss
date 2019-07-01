@@ -7,10 +7,14 @@
 
     @include side-padding;
 
+    label, legend {
+        color: $color-white;
+    }
+
     .bg-image {
         background-image: url(./images/contact/contact_bgr_opt.jpg);
         background-size: cover;
-        background-position: center 25%;
+        background-position: 60% 25%;
         position: absolute;
         top: 0;
         left: 0;
@@ -67,33 +71,26 @@
     }
 
     &__options {
-        width: 100%;
-    }
-
-    .toast {
-        width: 50%;
-        @include respond(tab-port) {
-            width: 75%;
-        }
-        @include respond(phone) {
-            width: 100%;
-        }
-
-        &-body {
-            color: $color-dark;
-        }
+        //width: 100%;
+        margin-right: 25%;
     }
 
     &__form {
         border: .15rem solid $color-white;
         padding: 4rem;
         width: 50%;
-        color: $color-dark;
+        color: $color-white;
+        text-align: left;
 
+        @include respond(tab-land) { 
+            padding: 2rem;
+        }
         @include respond(tab-port) {
+            padding: 2rem;
             width: 75%;
         }
         @include respond(phone) {
+            padding: 1rem;
             width: 100%;
         }
     }

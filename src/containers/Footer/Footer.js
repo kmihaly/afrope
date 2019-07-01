@@ -11,7 +11,7 @@ class Footer extends Component {
                             <a href="#about" className="footer-section__link">About</a>
                             <a href="#services" className="footer-section__link">Services</a>
                             <a href="#clients" className="footer-section__link">Clients</a>
-                            {/* <a href="https://egyszerblog.com" className="footer-section__link">Publications</a> */}
+                            <a href="#publications" className="footer-section__link">Publications</a>
                             <a href="#contact" className="footer-section__link">Contact</a>
                     </div>
                     <div className="col-1-3 footer-section__logo-box">

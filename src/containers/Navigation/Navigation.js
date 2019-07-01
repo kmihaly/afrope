@@ -44,9 +44,9 @@ class Navigation extends Component {
                         <NavItem>
                             <NavLink href="#clients">Clients</NavLink>
                         </NavItem>
-                        {/* <NavItem>
-                            <NavLink href="https://zsuzsaafrika.blog.hu">Publications</NavLink>
-                        </NavItem> */}
+                        <NavItem>
+                            <NavLink href="#publications">Publications</NavLink>
+                        </NavItem>
                         <NavItem>
                             <NavLink href="#contact">Contact</NavLink>
                         </NavItem>

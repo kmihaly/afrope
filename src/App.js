@@ -6,6 +6,7 @@ import Transition from './containers/Transition/Transition'
 import About from './containers/About/About'
 import Services from './containers/Services/Services'
 import Clients from './containers/Clients/Clients'
+// import Publications from './containers/Publications/Publications'
 import Contact from './containers/Contact/Contact'
 import Footer from './containers/Footer/Footer'
 
@@ -44,6 +45,7 @@ class App extends Component {
               <About />
               <Services />
               <Clients />
+              {/* <Publications /> */}
               <Contact />
             </main>
             <Footer />

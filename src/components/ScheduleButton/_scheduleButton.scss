@@ -2,14 +2,11 @@
   &,
   &:link,
   &:visited {
-    color: $color-white;
+    color: $color-white !important;
     background-color: $color-dark;
     line-height: 1;
     text-transform: uppercase;
     text-decoration: none;
-    // font-family: goudy;
-    // font-weight: 1000;
-    // letter-spacing: .1rem;
     padding: .3rem .7rem;
     display: inline-block;
     border-radius: .5rem;

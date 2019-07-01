@@ -47,11 +47,13 @@ class Services extends Component {
 				<div className="break-section"></div>
 				<SectionTitle text="Services" />
 				<div className="graybox">
+					<div className="graybox__logo">
+						<LogoBox color="black" logoWidthPercent="10" />
+					</div>
 					<div className="graybox__description graybox__description--2columns">
-						<LogoBox color="black" logoWidthPercent="20" />
-						<p>A degree from overseas has a great value we all know that. It is not a secret anymore that employers prefer to hire those fresh graduates who have overseas experience. The starting salary of these students tend to be much higher than those who have never left their countries for academic purposes.We know that finding the best university is stressful especially if you are planning to leave your home country. Before you get too overwhelmed let us assure you that we are here to make this period EASY for you.</p>
+						<p>A degree from overseas has a great value, we all know that. It is not a secret anymore that employers prefer to hire those fresh graduates who have overseas experience. The starting salary of these students tend to be much higher than those who have never left their countries for academic purposes.We know that finding the best university is stressful especially if you are planning to leave your home country. Before you get too overwhelmed, let us assure you that we are here to make this period EASY for you.</p>
 						<p>Every student is unique and we do not try to come up with a “one size fits all” solution. Our consultants are the BEST in the industry with actual experience in Africa and Europe. We help with the application process, scholarships, visa issues, you name it! We know your struggles and will do our best to guide you through this hectic period. YOU and YOUR GOALS are in the middle of our operation!</p>
-						
+
 					</div>
 					<div className="graybox__packages">
 						<div className="row">
@@ -69,7 +71,7 @@ class Services extends Component {
 							</div>
 						</div>
 					</div>
-					<div className="graybox__description">
+					<div className="graybox__bottom_description">
 						<p>Get in touch with us to discuss what could be the best for you and how you should reach it. The decision that you take now will determine your entire future! Schedule a FREE call now to see if we can help you.</p>
 						<div className="graybox__schedule">
 							<ScheduleButton />
