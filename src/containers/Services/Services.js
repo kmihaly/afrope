@@ -3,7 +3,7 @@ import LogoBox from '../../components/LogoBox/LogoBox'
 import Package from '../../components/Package'
 import SectionTitle from '../../components/SectionTitle/SectionTitle'
 import ScheduleButton from '../../components/ScheduleButton/ScheduleButton'
-import Scrollspy from 'react-scrollspy'
+import {Waypoint} from 'react-waypoint'
 
 class Services extends Component {
 	state = {
@@ -27,13 +27,15 @@ class Services extends Component {
 	*/
 
 	changeOverlayTop = () => {
+		console.log('state: '+ this.state.isProcessCaptionVisible)
 		if (this.state.isProcessCaptionVisible === "block") {
+			console.log("just this runs")
 			this.setState({
 				top: '0px',
 				isProcessCaptionVisible: "none"
 			})
-
 		} else {
+			console.log('made it visible')
 			this.setState({
 				top: '300px',
 				isProcessCaptionVisible: "block"
@@ -42,6 +44,8 @@ class Services extends Component {
 	}
 
 	scrollSpy = () => {
+		console.log("scrollspy runs")
+		console.log(window.innerWidth)
 		if (window.innerWidth < 600) {
 			this.changeOverlayTop()
 		}
@@ -50,7 +54,10 @@ class Services extends Component {
 	render() {
 		return (
 			<div className="services-section" id="services">
-				<Scrollspy items={["services-card"]} onUpdate={this.scrollSpy}>
+					<Waypoint
+						onEnter={this.scrollSpy}
+						onLeave={this.scrollSpy}
+					/>
 					<div
 						className="services-card"
 						id="services-card"
@@ -69,7 +76,7 @@ class Services extends Component {
 							</span>
 						</div>
 					</div>
-				</Scrollspy>
+					{/* </Waypoint> */}
 				<div className="break-section"></div>
 				<SectionTitle text="Services" />
 				<div className="graybox">
