@@ -10,32 +10,14 @@ class Services extends Component {
 		top: '300px',
 		isProcessCaptionVisible: "block"
 	}
-/*
-	reduceOverlayTop = () => {
-		this.setState({
-			top: '0px',
-			isProcessCaptionVisible: "none"
-		})
-	}
-
-	increaseOverlayTop = () => {
-		this.setState({
-			top: '300px',
-			isProcessCaptionVisible: "block"
-		})
-	}
-	*/
 
 	changeOverlayTop = () => {
-		console.log('state: '+ this.state.isProcessCaptionVisible)
 		if (this.state.isProcessCaptionVisible === "block") {
-			console.log("just this runs")
 			this.setState({
 				top: '0px',
 				isProcessCaptionVisible: "none"
 			})
 		} else {
-			console.log('made it visible')
 			this.setState({
 				top: '300px',
 				isProcessCaptionVisible: "block"
@@ -44,8 +26,6 @@ class Services extends Component {
 	}
 
 	scrollSpy = () => {
-		console.log("scrollspy runs")
-		console.log(window.innerWidth)
 		if (window.innerWidth < 600) {
 			this.changeOverlayTop()
 		}
@@ -57,6 +37,7 @@ class Services extends Component {
 					<Waypoint
 						onEnter={this.scrollSpy}
 						onLeave={this.scrollSpy}
+						bottomOffset="250px"
 					/>
 					<div
 						className="services-card"
