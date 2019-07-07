@@ -13,6 +13,7 @@
     "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.8.6",
     "react-scripts": "^2.1.8",
+    "react-scrollspy": "^3.4.0",
     "reactstrap": "^8.0.0"
   },
   "scripts": {

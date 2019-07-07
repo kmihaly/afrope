@@ -3,13 +3,14 @@ import LogoBox from '../../components/LogoBox/LogoBox'
 import Package from '../../components/Package'
 import SectionTitle from '../../components/SectionTitle/SectionTitle'
 import ScheduleButton from '../../components/ScheduleButton/ScheduleButton'
+import Scrollspy from 'react-scrollspy'
 
 class Services extends Component {
 	state = {
 		top: '300px',
 		isProcessCaptionVisible: "block"
 	}
-
+/*
 	reduceOverlayTop = () => {
 		this.setState({
 			top: '0px',
@@ -23,27 +24,52 @@ class Services extends Component {
 			isProcessCaptionVisible: "block"
 		})
 	}
+	*/
+
+	changeOverlayTop = () => {
+		if (this.state.isProcessCaptionVisible === "block") {
+			this.setState({
+				top: '0px',
+				isProcessCaptionVisible: "none"
+			})
+
+		} else {
+			this.setState({
+				top: '300px',
+				isProcessCaptionVisible: "block"
+			})
+		}
+	}
+
+	scrollSpy = () => {
+		if (window.innerWidth < 600) {
+			this.changeOverlayTop()
+		}
+	}
 
 	render() {
 		return (
 			<div className="services-section" id="services">
-				<div
-					className="services-card"
-					onMouseEnter={this.reduceOverlayTop}
-					onMouseLeave={this.increaseOverlayTop}
-				>
-					<span className="services-card__caption" style={{ display: this.state.isProcessCaptionVisible }}>
-						OUR PROCESS
+				<Scrollspy items={["services-card"]} onUpdate={this.scrollSpy}>
+					<div
+						className="services-card"
+						id="services-card"
+						onMouseEnter={this.changeOverlayTop}
+						onMouseLeave={this.changeOverlayTop}
+					>
+						<span className="services-card__caption" style={{ display: this.state.isProcessCaptionVisible }}>
+							OUR PROCESS
 					</span>
-					<div className="services-card__overlay" style={{ top: this.state.top }}>
-						<span className="services-card__overlay-text">
-							OUR PROCESS IS POWERFUL<br />
-							1. We analyze your skills and desires<br />
-							2. We design the best course of action to take<br />
-							3. We provide expert advice<br />
-						</span>
+						<div className="services-card__overlay" style={{ top: this.state.top }}>
+							<span className="services-card__overlay-text">
+								OUR PROCESS IS POWERFUL<br />
+								1. We analyze your skills and desires<br />
+								2. We design the best course of action to take<br />
+								3. We provide expert advice<br />
+							</span>
+						</div>
 					</div>
-				</div>
+				</Scrollspy>
 				<div className="break-section"></div>
 				<SectionTitle text="Services" />
 				<div className="graybox">
