@@ -77,11 +77,18 @@
             left: 25%;
             transform: translateX(25%);
             text-align: left;
+
+            @include respond(phone) {
+                transform: translateX(0);
+                left: 0;
+            }
+
         }
 
         @include respond(tab-port) {
             width: 75%;
         }
+
         @include respond(phone) {
             width: 100%;
         }
