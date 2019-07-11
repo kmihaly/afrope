@@ -26,9 +26,7 @@ class Services extends Component {
 	}
 
 	scrollSpy = () => {
-		if (window.innerWidth < 600) {
-			this.changeOverlayTop()
-		}
+		this.changeOverlayTop()
 	}
 
 	render() {

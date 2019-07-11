@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
 import Calendar from '../Calendar/Calendar'
 
-
-
-
 class ScheduleButton extends Component {
 
     state = {
@@ -34,6 +31,7 @@ class ScheduleButton extends Component {
             <>
                 <a 
                     className={"schedule-button schedule-button--animated " + this.state.animationClass}
+                    style={this.props.customStyle}
                     onMouseEnter={this.startScale}
                     onMouseLeave={this.endScale}
                     onClick={this.toggleCalendar}

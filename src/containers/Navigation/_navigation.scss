@@ -1,5 +1,6 @@
 .navbar-dark .navbar-nav .nav-link {
   color: $color-white;
+  padding: 1rem 1rem;
 }
 
 .navbar {
@@ -25,6 +26,7 @@
     .nav-item {
       position: relative;
       text-align: right;
+      
   
       a {
         display: inline-block;

@@ -51,7 +51,7 @@ class Navigation extends Component {
                             <NavLink href="#contact">Contact</NavLink>
                         </NavItem>
                         <NavItem>
-                            <ScheduleButton />
+                            <ScheduleButton customStyle={{marginTop: '.5rem'}}/>
                         </NavItem>
                     </Nav>
                 </Collapse>

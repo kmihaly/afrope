@@ -69,7 +69,8 @@ class Contact extends Component {
                 <div className="bg-image"></div>
                 <div className="contact-section__box">
                     <p className="contact-section__title">Get in Touch</p>
-                        <div className="contact-section__options">
+                    <div className="contact-section__options">
+                        <div className="contact-section__options--left">
                             <p><ScheduleButton /> with us (totally FREE)</p>
                             <p>Write an email: <a href="mailto:consulting@afrope.org">consulting@afrope.org</a></p>
                             <p>Chat with a Consultant: <a href="http://m.me/zoeafrope">CLICK HERE</a></p>
@@ -77,7 +78,10 @@ class Contact extends Component {
                             {/* <p>Or send a message - Our consultants will get in touch with you within 24 hours.</p> */}
                             {/* <p>In your mail, please provide with as much information as possible on your goals and vision - Our consultants will get in touch with you within 24 hours.</p> */}
                         </div>
-                        <div className="contact-section__options">
+                    </div>
+                    <div className="contact-section__options">
+                        <div className="contact-section__options--left">
+                            <p><br />Check us on Facebook:</p>
                             <div
                                 className="fb-page"
                                 data-href="https://www.facebook.com/zoeafrope/"
@@ -96,7 +100,7 @@ class Contact extends Component {
                                     <a href="https://www.facebook.com/zoeafrope/">Zoe Molnar</a>
                                 </blockquote>
                             </div>
-                        
+                        </div>
                     </div>
                     {/*<div className="contact-section__form">
                         <Form>
